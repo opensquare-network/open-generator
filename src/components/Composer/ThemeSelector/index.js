@@ -3,9 +3,9 @@ import styled from "styled-components";
 import Title from "../../common/Title";
 import { Dropdown } from "semantic-ui-react";
 import options from "./options";
-import { themeColorState } from "../../../recoil/selectors";
+import { secondaryThemeColorState, themeColorState } from "../../../recoil/selectors";
 import { useRecoilState, useRecoilValue } from "recoil";
-import { defaultToken, isVerticalState, tokenState } from "../../../recoil/atoms";
+import { bannerState, defaultToken, getDefaultBannerUrls, isVerticalState, tokenState } from "../../../recoil/atoms";
 import Style from './style'
 
 const Wrapper = styled.section`
@@ -44,7 +44,9 @@ const StyledDropDown = styled(Dropdown)`
 export default function ThemeSelector() {
   const defaultValue = (options.find(option => option.key === defaultToken) || {}).value;
   const color = useRecoilValue(themeColorState);
+  const secondaryColor = useRecoilValue(secondaryThemeColorState);
   const [, setToken] = useRecoilState(tokenState);
+  const [, setBanner] = useRecoilState(bannerState);
   const isVertical = useRecoilValue(isVerticalState);
 
   return (
@@ -59,9 +61,10 @@ export default function ThemeSelector() {
           onChange={(v, d) => {
             const token = String(d.value);
             setToken(token);
+            setBanner(getDefaultBannerUrls(token, isVertical)[0])
           }} />
-        <Style active={isVertical} />
-        <Style active={!isVertical} vertical={false} />
+        <Style active={isVertical} color={color} secondaryColor={secondaryColor} />
+        <Style active={!isVertical} vertical={false} color={color} secondaryColor={secondaryColor} />
       </div>
     </Wrapper>
   )

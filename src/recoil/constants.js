@@ -26,13 +26,13 @@ export const ksmVerticalCovers = [
 ];
 
 export const osnHorizontalCovers = [
-  '/imgs/opensquare/horinzontal/OpenSquare-1.png',
-  '/imgs/opensquare/horinzontal/OpenSquare-2.png',
-  '/imgs/opensquare/horinzontal/OpenSquare-3.png',
+  '/imgs/opensquare/horizontal/OpenSquare-1.png',
+  '/imgs/opensquare/horizontal/OpenSquare-2.png',
+  '/imgs/opensquare/horizontal/OpenSquare-3.png',
 ];
 
 export const osnVerticalCovers = [
-  '/imgs/opensquare/vertical/openSquare-1.png',
-  '/imgs/opensquare/vertical/openSquare-2.png',
-  '/imgs/opensquare/vertical/openSquare-3.png',
+  '/imgs/opensquare/vertical/opensquare-1.png',
+  '/imgs/opensquare/vertical/opensquare-2.png',
+  '/imgs/opensquare/vertical/opensquare-3.png',
 ];

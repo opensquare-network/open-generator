@@ -26,6 +26,24 @@ export const themeColorState = selector({
   }
 });
 
+export const secondaryThemeColorState = selector({
+  key: 'secondaryThemeColorState',
+  get: ({ get }) => {
+    const token = get(tokenState);
+
+    switch (token) {
+      case 'dot':
+        return '#FCE0EF';
+      case 'ksm':
+        return '#E0E0E0';
+      case 'osn':
+        return '#D7F8F6';
+      default:
+        return '#D7F8F6';
+    }
+  }
+});
+
 export const coversState = selector({
   key: 'coversState',
   get: ({ get }) => {

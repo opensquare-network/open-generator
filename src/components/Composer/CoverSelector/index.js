@@ -1,4 +1,4 @@
-import { coversState } from "../../../recoil/selectors";
+import { coversState, themeColorState } from "../../../recoil/selectors";
 import { useRecoilValue, useRecoilState } from "recoil";
 import React from "react";
 import styled from "styled-components";
@@ -33,7 +33,7 @@ const Wrapper = styled.section`
       padding: 1px;
       
       &.active {
-        border-color: #E6007A;
+        border-color: ${p => p.color};
       }
     }
   }
@@ -44,9 +44,10 @@ export default function CoverSelector() {
   const isVertical = useRecoilValue(isVerticalState);
   const chunks = chunk(covers, 3);
   const [banner, setBanner] = useRecoilState(bannerState);
+  const color = useRecoilValue(themeColorState);
 
   return (
-    <Wrapper isVertical={isVertical}>
+    <Wrapper isVertical={isVertical} color={color}>
       <Title title="Cover" />
       <ul>
         {
