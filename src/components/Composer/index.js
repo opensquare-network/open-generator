@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import ThemeSelector from "./ThemeSelector";
+import CoverSelector from "./CoverSelector";
 
 const Wrapper = styled.div`
   padding: 20px 60px;
@@ -12,6 +13,7 @@ export default function Composer() {
   return (
     <Wrapper>
       <ThemeSelector />
+      <CoverSelector />
     </Wrapper>
   )
 }

@@ -5,7 +5,8 @@ import { Dropdown } from "semantic-ui-react";
 import options from "./options";
 import { themeColorState } from "../../../recoil/selectors";
 import { useRecoilState, useRecoilValue } from "recoil";
-import { defaultToken, tokenState } from "../../../recoil/atoms";
+import { defaultToken, isVerticalState, tokenState } from "../../../recoil/atoms";
+import Style from './style'
 
 const Wrapper = styled.section`
   label {
@@ -44,6 +45,7 @@ export default function ThemeSelector() {
   const defaultValue = (options.find(option => option.key === defaultToken) || {}).value;
   const color = useRecoilValue(themeColorState);
   const [, setToken] = useRecoilState(tokenState);
+  const isVertical = useRecoilValue(isVerticalState);
 
   return (
     <Wrapper>
@@ -58,6 +60,8 @@ export default function ThemeSelector() {
             const token = String(d.value);
             setToken(token);
           }} />
+        <Style active={isVertical} />
+        <Style active={!isVertical} vertical={false} />
       </div>
     </Wrapper>
   )
