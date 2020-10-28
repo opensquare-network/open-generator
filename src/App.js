@@ -1,6 +1,8 @@
 import React from "react";
 import styled from 'styled-components';
 import Footer from "./components/Footer"
+import Composer from "./components/Composer";
+import Preview from "./components/Preview";
 
 const Wrapper = styled.div`
   display: flex;
@@ -18,6 +20,8 @@ function App() {
   return (
     <Wrapper>
       <Content>
+        <Composer />
+        <Preview />
       </Content>
       <Footer />
     </Wrapper>
