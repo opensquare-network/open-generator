@@ -38,3 +38,8 @@ export const bannerState = atom({
   key: 'bannerState',
   default: getDefaultBannerUrls(defaultToken, defaultIsVertical)[0]
 });
+
+export const titleState = atom({
+  key: 'titleState',
+  default: ''
+});
