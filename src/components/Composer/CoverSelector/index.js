@@ -20,8 +20,8 @@ const Wrapper = styled.section`
     display: flex;
     margin-top: 11px;
     img {
-      height: ${p => p.isVertical ? 100 : 46}px !important;
-      width: ${p => p.isVertical ? 46 : 100}px !important;
+      height: ${p => !p.isVertical ? 100 : 46}px !important;
+      width: ${p => !p.isVertical ? 46 : 100}px !important;
       cursor: pointer;
       border-radius: 6px;
       

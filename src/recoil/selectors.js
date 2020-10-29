@@ -1,7 +1,8 @@
 import { selector } from "recoil";
 import { isVerticalState, tokenState } from "./atoms";
 import {
-  dotHorizontalCovers, dotVerticalCovers,
+  dotHorizontalCovers,
+  dotVerticalCovers,
   ksmHorizontalCovers,
   ksmVerticalCovers,
   osnHorizontalCovers,
@@ -52,13 +53,13 @@ export const coversState = selector({
 
     switch (token) {
       case 'dot':
-        return isVertical ? dotVerticalCovers : dotHorizontalCovers;
+        return isVertical ? dotHorizontalCovers : dotVerticalCovers;
       case 'ksm':
-        return isVertical ? ksmVerticalCovers : ksmHorizontalCovers;
+        return isVertical ? ksmHorizontalCovers : ksmVerticalCovers;
       case 'osn':
-        return isVertical ? osnVerticalCovers : osnHorizontalCovers;
+        return isVertical ? osnHorizontalCovers : osnVerticalCovers;
       default:
-        return isVertical ? osnVerticalCovers : dotHorizontalCovers;
+        return isVertical ? osnHorizontalCovers : osnVerticalCovers;
     }
   }
 });

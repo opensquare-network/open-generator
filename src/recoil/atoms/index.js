@@ -14,13 +14,13 @@ const defaultIsVertical = false;
 export function getDefaultBannerUrls(token, vertical) {
   switch (token) {
     case 'dot':
-      return vertical ? dotVerticalCovers : dotHorizontalCovers;
+      return vertical ? dotHorizontalCovers : dotVerticalCovers;
     case 'ksm':
-      return vertical ? ksmVerticalCovers : ksmHorizontalCovers;
+      return vertical ? ksmHorizontalCovers : ksmVerticalCovers;
     case 'osn':
-      return vertical ? osnVerticalCovers : osnHorizontalCovers;
+      return vertical ? osnHorizontalCovers : osnVerticalCovers;
     default:
-      return vertical ? osnVerticalCovers : dotHorizontalCovers;
+      return vertical ? osnHorizontalCovers : osnVerticalCovers;
   }
 }
 
