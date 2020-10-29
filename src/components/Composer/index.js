@@ -4,6 +4,7 @@ import ThemeSelector from "./ThemeSelector";
 import CoverSelector from "./CoverSelector";
 import TitleInput from "./TitleInput";
 import PreviewBadge from "./PreviewBadge";
+import MarkdownEditor from "./MarkdownEditor";
 
 const Wrapper = styled.div`
   padding: 20px 60px;
@@ -18,6 +19,7 @@ export default function Composer() {
       <CoverSelector />
       <TitleInput />
       <PreviewBadge />
+      <MarkdownEditor />
     </Wrapper>
   )
 }
