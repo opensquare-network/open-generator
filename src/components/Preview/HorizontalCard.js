@@ -2,8 +2,10 @@ import React from "react";
 import TipCard from "./Card";
 import styled from "styled-components";
 import { useRecoilValue } from "recoil";
-import { bannerState, titleState } from "../../recoil/atoms";
+import { bannerState, contentState, titleState } from "../../recoil/atoms";
 import { Image } from "semantic-ui-react";
+import Markdown from "../common/Markdown";
+import { themeColorState } from "../../recoil/selectors";
 
 const Wrapper = styled(TipCard)`
   width: 880px;
@@ -34,13 +36,19 @@ const Wrapper = styled(TipCard)`
 export default function HorizontalCard() {
   const banner = useRecoilValue(bannerState);
   const title = useRecoilValue(titleState);
+  const content = useRecoilValue(contentState);
+  const primaryColor = useRecoilValue(themeColorState);
 
   return (
     <Wrapper>
       <Image src={banner} width={250} height={490} />
       <div className="content">
         <header>{title}</header>
-        <main></main>
+        <Markdown
+          isPreview={true}
+          md={content}
+          primaryColor={primaryColor}
+        />
       </div>
     </Wrapper>
   )
