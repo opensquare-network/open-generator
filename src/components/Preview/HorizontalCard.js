@@ -6,6 +6,7 @@ import { bannerState, contentState, titleState } from "../../recoil/atoms";
 import { Image } from "semantic-ui-react";
 import Markdown from "../common/Markdown";
 import { themeColorState } from "../../recoil/selectors";
+import Header from "./Header";
 
 const Wrapper = styled(TipCard)`
   width: 880px;
@@ -21,14 +22,6 @@ const Wrapper = styled(TipCard)`
   
   & > div.content {
     padding: 48px;
-    
-    header {
-      font-weight: bold;
-      font-size: 22px;
-      line-height: 36px;
-      
-      margin-bottom: 12px;
-    }
   }
   
 `;
@@ -43,7 +36,7 @@ export default function HorizontalCard() {
     <Wrapper>
       <Image src={banner} width={250} height={490} />
       <div className="content">
-        <header>{title}</header>
+        <Header>{title}</Header>
         <Markdown
           isPreview={true}
           md={content}
