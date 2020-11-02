@@ -7,6 +7,7 @@ import { Image } from "semantic-ui-react";
 import Header from "./Header";
 import Markdown from "../common/Markdown";
 import { themeColorState } from "../../recoil/selectors";
+import Footer from "./Footer";
 
 const Wrapper = styled(TipCard)`
   width: 320px;
@@ -22,8 +23,14 @@ const Wrapper = styled(TipCard)`
   }
   
   & > div.content {
+    display: flex;
+    flex-direction: column;
     min-height: 320px;
     padding: 16px 24px;
+    
+    .main {
+      flex: 1;
+    }
   }
 `;
 
@@ -38,11 +45,12 @@ export default function VerticalCard() {
       <Image src={banner} width={320} height={148} />
       <div className="content">
         <Header>{title}</Header>
-        <Markdown
+        <Markdown className="main"
           isPreview={true}
           md={content}
           primaryColor={primaryColor}
         />
+        <Footer />
       </div>
     </Wrapper>
   )

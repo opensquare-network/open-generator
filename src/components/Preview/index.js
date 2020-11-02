@@ -20,7 +20,7 @@ const Wrapper = styled.section`
   
   background: #EEEEEE;
   
-  svg {
+  svg.download {
     position: absolute;
     right: 30px;
     bottom: 0;
@@ -36,7 +36,7 @@ export default function Preview() {
       {
         isVertical ? <VerticalCard /> : <HorizontalCard />
       }
-      <Download />
+      <Download className="download" />
     </Wrapper>
   )
 }

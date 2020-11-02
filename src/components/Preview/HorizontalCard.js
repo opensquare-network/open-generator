@@ -7,6 +7,7 @@ import { Image } from "semantic-ui-react";
 import Markdown from "../common/Markdown";
 import { themeColorState } from "../../recoil/selectors";
 import Header from "./Header";
+import Footer from "./Footer";
 
 const Wrapper = styled(TipCard)`
   width: 660px;
@@ -23,6 +24,13 @@ const Wrapper = styled(TipCard)`
   & > div.content {
     flex: 1;
     padding: 24px;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    
+    .main {
+      flex: 1;
+    }
   }
   
 `;
@@ -38,11 +46,12 @@ export default function HorizontalCard() {
       <Image src={banner} width={250} height={490} />
       <div className="content">
         <Header>{title}</Header>
-        <Markdown
+        <Markdown className="main"
           isPreview={true}
           md={content}
           primaryColor={primaryColor}
         />
+        <Footer />
       </div>
     </Wrapper>
   )
