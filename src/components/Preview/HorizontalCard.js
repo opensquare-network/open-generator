@@ -9,19 +9,20 @@ import { themeColorState } from "../../recoil/selectors";
 import Header from "./Header";
 
 const Wrapper = styled(TipCard)`
-  width: 880px;
+  width: 660px;
   
   display: flex;
   
   img {
-    width: 250px;
-    height: 490px;
+    width: 187px;
+    height: 368px;
     border-bottom-left-radius: 8px;
     border-top-left-radius: 8px;
   }
   
   & > div.content {
-    padding: 48px;
+    flex: 1;
+    padding: 24px;
   }
   
 `;

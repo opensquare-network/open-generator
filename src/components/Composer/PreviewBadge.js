@@ -17,6 +17,8 @@ const Wrapper = styled.div`
   
   color: rgba(29, 37, 60, 0.64);
   font-size: 12px;
+  
+  z-index: 1;
 `;
 
 export default function PreviewBadge() {
