@@ -9,7 +9,7 @@ import {
 
 export const defaultToken = 'dot';
 
-const defaultIsVertical = false;
+const defaultIsVertical = true;
 
 export function getDefaultBannerUrls(token, vertical) {
   switch (token) {
