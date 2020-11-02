@@ -17,8 +17,6 @@ const Wrapper = styled(TipCard)`
   img {
     width: 187px;
     height: 368px;
-    border-bottom-left-radius: 8px;
-    border-top-left-radius: 8px;
   }
   
   & > div.content {
@@ -42,7 +40,7 @@ export default function HorizontalCard() {
   const primaryColor = useRecoilValue(themeColorState);
 
   return (
-    <Wrapper>
+    <Wrapper id="horizontal-card">
       <Image src={banner} width={250} height={490} />
       <div className="content">
         <Header>{title}</Header>
