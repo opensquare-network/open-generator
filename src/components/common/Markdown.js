@@ -1,9 +1,14 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import styled from "styled-components";
+import gfm from 'remark-gfm'
 
 const Markdown = ({ className, isPreview = false, md }) => {
-  return <ReactMarkdown className={isPreview ? `${className} mde-preview-content` : className} source={md}
+  console.log('md', md);
+
+  return <ReactMarkdown
+    plugins={[gfm]}
+    className={isPreview ? `${className} mde-preview-content` : className} source={md}
                         linkTarget='_blank' />;
 };
 
@@ -71,7 +76,11 @@ export default styled(Markdown)`
 
 		img {
 			max-width: 100%;
-			margin: 2rem 0;
+			display: block;
+			margin: 0 auto;
+			
+			width: unset !important;
+			height: 148px !important;
 		}
 
 		pre {
