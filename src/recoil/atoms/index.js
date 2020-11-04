@@ -4,7 +4,7 @@ import {
   dotVerticalCovers,
   ksmHorizontalCovers,
   ksmVerticalCovers,
-  osnHorizontalCovers, osnVerticalCovers
+  osnHorizontalCovers, osnVerticalCovers, phaHorizontalCovers
 } from "../constants";
 
 export const defaultToken = 'dot';
@@ -17,6 +17,8 @@ export function getDefaultBannerUrls(token, vertical) {
       return vertical ? dotHorizontalCovers : dotVerticalCovers;
     case 'ksm':
       return vertical ? ksmHorizontalCovers : ksmVerticalCovers;
+    case 'pha':
+      return vertical ? phaHorizontalCovers : dotVerticalCovers;
     case 'osn':
       return vertical ? osnHorizontalCovers : osnVerticalCovers;
     default:

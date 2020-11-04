@@ -6,7 +6,7 @@ import {
   ksmHorizontalCovers,
   ksmVerticalCovers,
   osnHorizontalCovers,
-  osnVerticalCovers
+  osnVerticalCovers, phaHorizontalCovers
 } from "./constants";
 
 export const themeColorState = selector({
@@ -19,6 +19,8 @@ export const themeColorState = selector({
         return '#E6007A';
       case 'ksm':
         return '#000000';
+      case 'pha':
+        return '#D2FD60';
       case 'osn':
         return '#04D2C5';
       default:
@@ -37,6 +39,8 @@ export const secondaryThemeColorState = selector({
         return '#FCE0EF';
       case 'ksm':
         return '#E0E0E0';
+      case 'pha':
+        return 'rgba(197,197, 197, 0.12)';
       case 'osn':
         return '#D7F8F6';
       default:
@@ -56,6 +60,8 @@ export const coversState = selector({
         return isVertical ? dotHorizontalCovers : dotVerticalCovers;
       case 'ksm':
         return isVertical ? ksmHorizontalCovers : ksmVerticalCovers;
+      case 'pha':
+        return isVertical ? phaHorizontalCovers : dotVerticalCovers;
       case 'osn':
         return isVertical ? osnHorizontalCovers : osnVerticalCovers;
       default:

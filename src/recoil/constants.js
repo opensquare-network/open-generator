@@ -25,6 +25,12 @@ export const ksmVerticalCovers = [
   '/imgs/kusama/vertical/kusama-3.png',
 ];
 
+export const phaHorizontalCovers = [
+  '/imgs/phala/horizontal/Phala-1.png',
+  '/imgs/phala/horizontal/Phala-2.png',
+  '/imgs/phala/horizontal/Phala-3.png',
+];
+
 export const osnHorizontalCovers = [
   '/imgs/opensquare/horizontal/OpenSquare-1.png',
   '/imgs/opensquare/horizontal/OpenSquare-2.png',

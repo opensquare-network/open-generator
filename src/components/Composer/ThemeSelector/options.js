@@ -14,6 +14,12 @@ const options = [
     image: { src: kusamaIcon, avatar: true }
   },
   {
+    key: 'pha',
+    text: 'Phala',
+    value: 'pha',
+    image: { src: '/imgs/phala-logo.svg', avatar: true }
+  },
+  {
     key: 'osn',
     text: 'OpenSquare',
     value: 'osn',
