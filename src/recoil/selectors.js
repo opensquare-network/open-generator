@@ -40,7 +40,7 @@ export const secondaryThemeColorState = selector({
       case 'ksm':
         return '#E0E0E0';
       case 'pha':
-        return 'rgba(197,197, 197, 0.12)';
+        return '#F8FEE5';
       case 'osn':
         return '#D7F8F6';
       default:
