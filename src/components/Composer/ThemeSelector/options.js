@@ -20,6 +20,12 @@ const options = [
     image: { src: '/imgs/phala-logo.svg', avatar: true }
   },
   {
+    key: 'cru',
+    text: 'Crust',
+    value: 'cru',
+    image: { src: '/imgs/crust-logo.jpeg', avatar: true }
+  },
+  {
     key: 'osn',
     text: 'OpenSquare',
     value: 'osn',

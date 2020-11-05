@@ -31,6 +31,14 @@ export const phaHorizontalCovers = [
   '/imgs/phala/horizontal/Phala-3.png',
 ];
 
+export const cruHorizontalCovers = [
+  '/imgs/crust/horizontal/crust-1.png',
+];
+
+export const cruVerticalCovers = [
+  '/imgs/crust/vertical/crust-1.png',
+];
+
 export const osnHorizontalCovers = [
   '/imgs/opensquare/horizontal/OpenSquare-1.png',
   '/imgs/opensquare/horizontal/OpenSquare-2.png',

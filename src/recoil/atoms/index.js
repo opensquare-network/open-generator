@@ -1,5 +1,6 @@
 import { atom } from "recoil";
 import {
+  cruHorizontalCovers, cruVerticalCovers,
   dotHorizontalCovers,
   dotVerticalCovers,
   ksmHorizontalCovers,
@@ -19,6 +20,8 @@ export function getDefaultBannerUrls(token, vertical) {
       return vertical ? ksmHorizontalCovers : ksmVerticalCovers;
     case 'pha':
       return vertical ? phaHorizontalCovers : dotVerticalCovers;
+    case 'cru':
+      return vertical ? cruHorizontalCovers : cruVerticalCovers;
     case 'osn':
       return vertical ? osnHorizontalCovers : osnVerticalCovers;
     default:

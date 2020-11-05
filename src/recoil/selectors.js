@@ -1,6 +1,8 @@
 import { selector } from "recoil";
 import { isVerticalState, tokenState } from "./atoms";
 import {
+  cruHorizontalCovers,
+  cruVerticalCovers,
   dotHorizontalCovers,
   dotVerticalCovers,
   ksmHorizontalCovers,
@@ -21,6 +23,8 @@ export const themeColorState = selector({
         return '#000000';
       case 'pha':
         return '#D2FD60';
+      case 'cru':
+        return '#fa8c16';
       case 'osn':
         return '#04D2C5';
       default:
@@ -41,6 +45,8 @@ export const secondaryThemeColorState = selector({
         return '#E0E0E0';
       case 'pha':
         return '#F8FEE5';
+      case 'cru':
+        return '#FDDDBB';
       case 'osn':
         return '#D7F8F6';
       default:
@@ -62,6 +68,8 @@ export const coversState = selector({
         return isVertical ? ksmHorizontalCovers : ksmVerticalCovers;
       case 'pha':
         return isVertical ? phaHorizontalCovers : dotVerticalCovers;
+      case 'cru':
+        return isVertical ? cruHorizontalCovers : cruVerticalCovers;
       case 'osn':
         return isVertical ? osnHorizontalCovers : osnVerticalCovers;
       default:
