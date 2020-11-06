@@ -8,7 +8,9 @@ import {
   ksmHorizontalCovers,
   ksmVerticalCovers,
   osnHorizontalCovers,
-  osnVerticalCovers, phaHorizontalCovers
+  osnVerticalCovers,
+  phaHorizontalCovers,
+  phaVerticalCovers
 } from "./constants";
 
 export const themeColorState = selector({
@@ -67,7 +69,7 @@ export const coversState = selector({
       case 'ksm':
         return isVertical ? ksmHorizontalCovers : ksmVerticalCovers;
       case 'pha':
-        return isVertical ? phaHorizontalCovers : dotVerticalCovers;
+        return isVertical ? phaHorizontalCovers : phaVerticalCovers;
       case 'cru':
         return isVertical ? cruHorizontalCovers : cruVerticalCovers;
       case 'osn':
