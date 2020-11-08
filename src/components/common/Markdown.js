@@ -4,8 +4,6 @@ import styled from "styled-components";
 import gfm from 'remark-gfm'
 
 const Markdown = ({ className, isPreview = false, md }) => {
-  console.log('md', md);
-
   return <ReactMarkdown
     plugins={[gfm]}
     className={isPreview ? `${className} mde-preview-content` : className} source={md}

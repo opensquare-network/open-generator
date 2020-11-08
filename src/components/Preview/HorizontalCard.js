@@ -16,7 +16,7 @@ const Wrapper = styled(TipCard)`
   
   img {
     width: 187px;
-    height: 368px;
+    height: 100%;
   }
   
   & > div.content {
@@ -41,7 +41,9 @@ export default function HorizontalCard() {
 
   return (
     <Wrapper id="horizontal-card">
-      <Image src={banner} width={250} height={490} />
+      <div className="banner">
+        <Image src={banner} />
+      </div>
       <div className="content">
         <Header>{title}</Header>
         <Markdown className="main"
