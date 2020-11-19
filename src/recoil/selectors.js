@@ -8,7 +8,7 @@ import {
   ksmHorizontalCovers,
   ksmVerticalCovers,
   osnHorizontalCovers,
-  osnVerticalCovers,
+  osnVerticalCovers, pcxHorizontalCovers, pcxVerticalCovers,
   phaHorizontalCovers,
   phaVerticalCovers
 } from "./constants";
@@ -29,6 +29,8 @@ export const themeColorState = selector({
         return '#fa8c16';
       case 'osn':
         return '#04D2C5';
+      case 'pcx':
+        return '#ecb417';
       default:
         return '#04D2C5';
     }
@@ -51,6 +53,8 @@ export const secondaryThemeColorState = selector({
         return '#FDDDBB';
       case 'osn':
         return '#D7F8F6';
+      case 'pcx':
+        return '#FFF2CC';
       default:
         return '#D7F8F6';
     }
@@ -74,6 +78,8 @@ export const coversState = selector({
         return isVertical ? cruHorizontalCovers : cruVerticalCovers;
       case 'osn':
         return isVertical ? osnHorizontalCovers : osnVerticalCovers;
+      case 'pcx':
+        return isVertical ? pcxHorizontalCovers : pcxVerticalCovers;
       default:
         return isVertical ? osnHorizontalCovers : osnVerticalCovers;
     }

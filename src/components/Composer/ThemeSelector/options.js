@@ -26,6 +26,12 @@ const options = [
     image: { src: '/imgs/crust-logo.jpeg', avatar: true }
   },
   {
+    key: 'pcx',
+    text: 'ChainX',
+    value: 'pcx',
+    image: { src: '/imgs/chainx-logo.png', avatar: true }
+  },
+  {
     key: 'osn',
     text: 'OpenSquare',
     value: 'osn',

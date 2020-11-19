@@ -45,6 +45,14 @@ export const cruVerticalCovers = [
   '/imgs/crust/vertical/crust-1.png',
 ];
 
+export const pcxHorizontalCovers = [
+  '/imgs/chainx/horizontal/chainx-1.png',
+];
+
+export const pcxVerticalCovers = [
+  '/imgs/chainx/vertical/chainx-1.png',
+];
+
 export const osnHorizontalCovers = [
   '/imgs/opensquare/horizontal/OpenSquare-1.png',
   '/imgs/opensquare/horizontal/OpenSquare-2.png',
