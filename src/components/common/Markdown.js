@@ -16,7 +16,7 @@ export default styled(Markdown)`
 		font-size: 14px;
 		line-height: 24px;
 		margin-bottom: 2rem;
-		color: rgba(29, 37, 60, 0.64);
+		color: rgba(0, 0, 0, 0.84);
 		overflow-wrap: break-word;
 
 		p, blockquote, ul, ol, dl, table {
