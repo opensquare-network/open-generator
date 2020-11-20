@@ -21,6 +21,8 @@ export default styled(Markdown)`
 
 		p, blockquote, ul, ol, dl, table {
 			line-height: 150%;
+			color: rgba(0, 0, 0, 0.84);
+			font-size: 14px;
 			margin: 0 0 15px 0;
 		}
 
