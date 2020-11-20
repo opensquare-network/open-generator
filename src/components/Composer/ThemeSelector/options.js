@@ -32,6 +32,12 @@ const options = [
     image: { src: '/imgs/chainx-logo.png', avatar: true }
   },
   {
+    key: 'base',
+    text: 'PolkaBase',
+    value: 'base',
+    image: { src: '/imgs/polkabase-logo.png', avatar: true }
+  },
+  {
     key: 'osn',
     text: 'OpenSquare',
     value: 'osn',

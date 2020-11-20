@@ -53,6 +53,10 @@ export const pcxVerticalCovers = [
   '/imgs/chainx/vertical/chainx-1.png',
 ];
 
+export const baseHorizontalCovers = [
+  '/imgs/polkabase/horizontal/PolkaBase-1.png',
+];
+
 export const osnHorizontalCovers = [
   '/imgs/opensquare/horizontal/OpenSquare-1.png',
   '/imgs/opensquare/horizontal/OpenSquare-2.png',

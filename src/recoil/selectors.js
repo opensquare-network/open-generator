@@ -1,6 +1,7 @@
 import { selector } from "recoil";
 import { isVerticalState, tokenState } from "./atoms";
 import {
+  baseHorizontalCovers,
   cruHorizontalCovers,
   cruVerticalCovers,
   dotHorizontalCovers,
@@ -32,7 +33,7 @@ export const themeColorState = selector({
       case 'pcx':
         return '#ecb417';
       default:
-        return '#04D2C5';
+        return '#E6007A';
     }
   }
 });
@@ -56,7 +57,7 @@ export const secondaryThemeColorState = selector({
       case 'pcx':
         return '#FFF2CC';
       default:
-        return '#D7F8F6';
+        return '#FCE0EF';
     }
   }
 });
@@ -80,6 +81,8 @@ export const coversState = selector({
         return isVertical ? osnHorizontalCovers : osnVerticalCovers;
       case 'pcx':
         return isVertical ? pcxHorizontalCovers : pcxVerticalCovers;
+      case 'base':
+        return isVertical ? baseHorizontalCovers : dotVerticalCovers;
       default:
         return isVertical ? osnHorizontalCovers : osnVerticalCovers;
     }
