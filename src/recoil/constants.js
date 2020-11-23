@@ -47,6 +47,7 @@ export const cruVerticalCovers = [
 
 export const pcxHorizontalCovers = [
   '/imgs/chainx/horizontal/chainx-1.png',
+  '/imgs/chainx/horizontal/chainx-2.png',
 ];
 
 export const pcxVerticalCovers = [
