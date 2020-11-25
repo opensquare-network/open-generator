@@ -39,7 +39,11 @@ export default function Preview() {
       return
     }
 
-    const canvas = await html2canvas(element, { scale: 10 });
+    const canvas = await html2canvas(element, {
+      useCORS: true,
+      scale: 10,
+      allowTaint: true
+    });
     const img = canvas.toDataURL("image/png");
 
     const btn = document.createElement("a");
