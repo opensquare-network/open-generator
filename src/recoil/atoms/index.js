@@ -14,7 +14,7 @@ import {
   phaVerticalCovers, ringHorizontalCovers, ringVerticalCovers
 } from "../constants";
 
-export const defaultToken = 'dot';
+export const defaultToken = window.localStorage.getItem('token') || 'dot';
 
 const defaultIsVertical = true;
 

@@ -61,6 +61,7 @@ export default function ThemeSelector() {
           onChange={(v, d) => {
             const token = String(d.value);
             setToken(token);
+            window.localStorage.setItem('token', token);
             setBanner(getDefaultBannerUrls(token, isVertical)[0])
           }} />
         <Style active={isVertical} color={color} secondaryColor={secondaryColor} />
