@@ -54,6 +54,18 @@ export const pcxVerticalCovers = [
   '/imgs/chainx/vertical/chainx-1.png',
 ];
 
+export const ringHorizontalCovers = [
+  '/imgs/darwinia/horizontal/ring-1.jpg',
+  '/imgs/darwinia/horizontal/ring-2.jpg',
+  '/imgs/darwinia/horizontal/ring-3.jpg',
+];
+
+export const ringVerticalCovers = [
+  '/imgs/darwinia/vertical/ring-1.jpg',
+  '/imgs/darwinia/vertical/ring-2.jpg',
+  '/imgs/darwinia/vertical/ring-3.jpg',
+];
+
 export const baseHorizontalCovers = [
   '/imgs/polkabase/horizontal/PolkaBase-1.png',
 ];

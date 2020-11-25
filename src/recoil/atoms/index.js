@@ -11,7 +11,7 @@ import {
   pcxHorizontalCovers,
   pcxVerticalCovers,
   phaHorizontalCovers,
-  phaVerticalCovers
+  phaVerticalCovers, ringHorizontalCovers, ringVerticalCovers
 } from "../constants";
 
 export const defaultToken = 'dot';
@@ -32,6 +32,8 @@ export function getDefaultBannerUrls(token, vertical) {
       return vertical ? osnHorizontalCovers : osnVerticalCovers;
     case 'pcx':
       return vertical ? pcxHorizontalCovers : pcxVerticalCovers;
+    case 'ring':
+      return vertical ? ringHorizontalCovers : ringVerticalCovers;
     case 'base':
       return vertical ? baseHorizontalCovers : dotVerticalCovers;
     default:

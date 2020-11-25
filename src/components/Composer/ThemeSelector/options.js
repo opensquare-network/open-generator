@@ -32,6 +32,12 @@ const options = [
     image: { src: '/imgs/chainx-logo.png', avatar: true }
   },
   {
+    key: 'ring',
+    text: 'Darwinia',
+    value: 'ring',
+    image: { src: '/imgs/darwinia-logo.png', avatar: true }
+  },
+  {
     key: 'base',
     text: 'PolkaBase',
     value: 'base',
