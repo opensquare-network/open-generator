@@ -44,6 +44,12 @@ const options = [
     image: { src: '/imgs/polkabase-logo.png', avatar: true }
   },
   {
+    key: 'dego',
+    text: 'Dego',
+    value: 'dego',
+    image: { src: '/imgs/dego-logo.png', avatar: true }
+  },
+  {
     key: 'osn',
     text: 'OpenSquare',
     value: 'osn',

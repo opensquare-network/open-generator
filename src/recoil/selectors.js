@@ -3,7 +3,7 @@ import { isVerticalState, tokenState } from "./atoms";
 import {
   baseHorizontalCovers,
   cruHorizontalCovers,
-  cruVerticalCovers,
+  cruVerticalCovers, degoHorizontalCovers, degoVerticalCovers,
   dotHorizontalCovers,
   dotVerticalCovers,
   ksmHorizontalCovers,
@@ -22,6 +22,7 @@ export const themeColorState = selector({
     switch (token) {
       case 'dot':
         return '#E6007A';
+      case 'dego':
       case 'ksm':
         return '#000000';
       case 'pha':
@@ -48,6 +49,7 @@ export const secondaryThemeColorState = selector({
     switch (token) {
       case 'dot':
         return '#FCE0EF';
+      case 'dego':
       case 'ksm':
         return '#E0E0E0';
       case 'pha':
@@ -89,6 +91,8 @@ export const coversState = selector({
         return isVertical ? ringHorizontalCovers : ringVerticalCovers;
       case 'base':
         return isVertical ? baseHorizontalCovers : dotVerticalCovers;
+      case 'dego':
+        return isVertical ? degoHorizontalCovers : degoVerticalCovers;
       default:
         return isVertical ? osnHorizontalCovers : osnVerticalCovers;
     }

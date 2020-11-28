@@ -70,6 +70,16 @@ export const baseHorizontalCovers = [
   '/imgs/polkabase/horizontal/PolkaBase-1.png',
 ];
 
+export const degoHorizontalCovers = [
+  '/imgs/dego/horizontal/dego-1.png',
+  '/imgs/dego/horizontal/dego-2.png',
+];
+
+export const degoVerticalCovers = [
+  '/imgs/dego/vertical/dego-1.png',
+  '/imgs/dego/vertical/dego-2.png',
+];
+
 export const osnHorizontalCovers = [
   '/imgs/opensquare/horizontal/OpenSquare-1.png',
   '/imgs/opensquare/horizontal/OpenSquare-2.png',

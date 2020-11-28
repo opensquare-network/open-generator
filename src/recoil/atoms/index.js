@@ -1,7 +1,7 @@
 import { atom } from "recoil";
 import {
   baseHorizontalCovers,
-  cruHorizontalCovers, cruVerticalCovers,
+  cruHorizontalCovers, cruVerticalCovers, degoHorizontalCovers, degoVerticalCovers,
   dotHorizontalCovers,
   dotVerticalCovers,
   ksmHorizontalCovers,
@@ -36,6 +36,8 @@ export function getDefaultBannerUrls(token, vertical) {
       return vertical ? ringHorizontalCovers : ringVerticalCovers;
     case 'base':
       return vertical ? baseHorizontalCovers : dotVerticalCovers;
+    case 'dego':
+      return vertical ? degoHorizontalCovers : degoVerticalCovers;
     default:
       return vertical ? osnHorizontalCovers : osnVerticalCovers;
   }
