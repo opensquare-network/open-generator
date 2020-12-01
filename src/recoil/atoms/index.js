@@ -67,3 +67,14 @@ export const contentState = atom({
   key: 'contentState',
   default: ''
 });
+
+
+export const isSignatureState = atom({
+  key: 'isSignatureState',
+  default: false
+});
+
+export const signatureState = atom({
+  key: 'signatureState',
+  default: ''
+});
