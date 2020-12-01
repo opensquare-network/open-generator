@@ -67,3 +67,8 @@ export const contentState = atom({
   key: 'contentState',
   default: ''
 });
+
+export const nonOfficialState = atom({
+  key: 'nonOfficialState',
+  default: false
+});
