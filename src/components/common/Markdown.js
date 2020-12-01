@@ -51,7 +51,6 @@ export default styled(Markdown)`
 
 		a {
 			color: ${p => p.primaryColor || '#04D2C5'};
-			text-decoration: underline;
 
 			&:hover {
 				text-decoration: none;

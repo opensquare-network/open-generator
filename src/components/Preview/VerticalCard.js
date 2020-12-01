@@ -2,7 +2,7 @@ import React from "react";
 import TipCard from "./Card";
 import styled from "styled-components";
 import { useRecoilValue } from "recoil";
-import { bannerState, contentState, titleState, tokenState } from "../../recoil/atoms";
+import { bannerState, contentState, titleState } from "../../recoil/atoms";
 import { Image } from "semantic-ui-react";
 import Header from "./Header";
 import Markdown from "../common/Markdown";
@@ -37,9 +37,6 @@ export default function VerticalCard() {
   const title = useRecoilValue(titleState);
   const content = useRecoilValue(contentState);
   const primaryColor = useRecoilValue(themeColorState);
-  const token = useRecoilValue(tokenState);
-
-  const linkColor = token === 'pha' ? 'rgba(0, 0, 0, 0.84)' : primaryColor
 
   return (
     <Wrapper id="vertical-card">
@@ -49,7 +46,7 @@ export default function VerticalCard() {
         <Markdown className="main"
           isPreview={true}
           md={content}
-          primaryColor={linkColor}
+          primaryColor={primaryColor}
         />
         <Footer />
       </div>

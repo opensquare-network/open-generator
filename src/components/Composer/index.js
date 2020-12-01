@@ -5,6 +5,7 @@ import CoverSelector from "./CoverSelector";
 import TitleInput from "./TitleInput";
 import PreviewBadge from "./PreviewBadge";
 import MarkdownEditor from "./MarkdownEditor";
+import NonOfficialCheckbox from "./NonOfficialCheckbox";
 
 const Wrapper = styled.div`
   padding: 20px 60px;
@@ -20,6 +21,7 @@ export default function Composer() {
       <TitleInput />
       <PreviewBadge />
       <MarkdownEditor />
+      <NonOfficialCheckbox />
     </Wrapper>
   )
 }
