@@ -97,9 +97,16 @@ export default styled(Markdown)`
 			border-radius: 3px;
 			color: #53595C;
 			white-space: pre;
+			background-color: #EBF0F5;
+			padding: 0 0.3rem;
 			&::before, &::after {
 				letter-spacing: -0.2em;
 			}
+		}
+
+		pre > code {
+			background-color: transparent;
+			padding: 0;
 		}
 	}
 
