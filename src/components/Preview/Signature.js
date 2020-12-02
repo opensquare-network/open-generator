@@ -5,6 +5,7 @@ const Wrapper = styled.div`
   margin-bottom: 14px;
 
   span {
+    word-break: break-all;
     font-weight: 400;
     font-size: 10px;
     line-height: 20px;
