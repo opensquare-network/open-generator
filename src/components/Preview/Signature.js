@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
-  margin-bottom: 14px;
+  display: inline-block;
 
   span {
     word-break: break-all;
@@ -17,7 +17,7 @@ const Wrapper = styled.div`
   }
 `;
 
-export default function Footer({name, show}) {
+export default function Signature({name, show}) {
   if (show && name) {
     return (
       <Wrapper>

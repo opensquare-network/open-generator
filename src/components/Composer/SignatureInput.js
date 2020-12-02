@@ -1,13 +1,17 @@
 import React from "react";
 import styled from "styled-components";
 import { Checkbox, Input } from "semantic-ui-react";
-import { useRecoilState } from "recoil";
+import { useRecoilState, useRecoilValue } from "recoil";
 
 import Title from "../common/Title";
 import { isSignatureState, signatureState } from "../../recoil/atoms";
+import { themeColorState } from "../../recoil/selectors";
 
 const Wrapper = styled.div`
   margin-top: 20px;
+  input:focus {
+    border-color: ${p => p.color} !important;
+  }
 `
 
 const TitleWrapper = styled.div`
@@ -20,6 +24,7 @@ const TitleWrapper = styled.div`
 export default function SignatureInput() {
   const [isSignature, setIsSignature] = useRecoilState(isSignatureState);
   const [signature, setSignature] = useRecoilState(signatureState);
+  const color = useRecoilValue(themeColorState);
 
   const onToggle = () => setIsSignature(!isSignature);
   const onChange = (e) => {
@@ -27,7 +32,7 @@ export default function SignatureInput() {
   }
 
   return (
-    <Wrapper>
+    <Wrapper color={color}>
       <TitleWrapper>
         <Title title="Signature" />
         <Checkbox slider checked={isSignature} onChange={onToggle} />

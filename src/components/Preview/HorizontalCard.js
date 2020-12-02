@@ -9,6 +9,7 @@ import { themeColorState } from "../../recoil/selectors";
 import Header from "./Header";
 import Footer from "./Footer";
 import Signature from "./Signature";
+import ExtraInfo from "./ExtraInfo";
 
 const Wrapper = styled(TipCard)`
   width: 660px;
@@ -54,7 +55,9 @@ export default function HorizontalCard() {
           md={content}
           primaryColor={primaryColor}
         />
-        <Signature name={signature} show={isSignature} />
+        <ExtraInfo>
+          <Signature name={signature} show={isSignature} />
+        </ExtraInfo>
         <Footer />
       </div>
     </Wrapper>

@@ -68,7 +68,6 @@ export const contentState = atom({
   default: ''
 });
 
-
 export const isSignatureState = atom({
   key: 'isSignatureState',
   default: false
@@ -77,4 +76,9 @@ export const isSignatureState = atom({
 export const signatureState = atom({
   key: 'signatureState',
   default: ''
+});
+
+export const nonOfficialState = atom({
+  key: 'nonOfficialState',
+  default: false
 });
