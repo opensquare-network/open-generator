@@ -14,18 +14,14 @@ const Wrapper = styled.section`
   flex: 1;
   padding: 10px;
   
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
   overflow-x: hidden;
-  
+
   background: #EEEEEE;
   
   svg.download {
-    position: absolute;
+    position: fixed;
     right: 30px;
-    bottom: 0;
+    bottom: 60px;
     cursor: pointer;
   }
 `;
