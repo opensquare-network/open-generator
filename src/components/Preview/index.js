@@ -9,23 +9,20 @@ import html2canvas from "html2canvas";
 import { v4 as uuidv4 } from 'uuid';
 
 const Wrapper = styled.section`
-  position: relative;
+  display: flex;
+  align-items: center;
   
   flex: 1;
   padding: 10px;
   
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
   overflow-x: hidden;
-  
+
   background: #EEEEEE;
   
   svg.download {
-    position: absolute;
+    position: fixed;
     right: 30px;
-    bottom: 0;
+    bottom: 60px;
     cursor: pointer;
   }
 `;

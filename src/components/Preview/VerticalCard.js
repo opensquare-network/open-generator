@@ -11,6 +11,7 @@ import Footer from "./Footer";
 
 const Wrapper = styled(TipCard)`
   width: 320px;
+  margin: auto;
   
   display: flex;
   flex-direction: column;
