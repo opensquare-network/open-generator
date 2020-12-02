@@ -9,8 +9,6 @@ import html2canvas from "html2canvas";
 import { v4 as uuidv4 } from 'uuid';
 
 const Wrapper = styled.section`
-  position: relative;
-
   display: flex;
   align-items: center;
   
