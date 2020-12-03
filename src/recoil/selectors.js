@@ -11,7 +11,9 @@ import {
   osnHorizontalCovers,
   osnVerticalCovers, pcxHorizontalCovers, pcxVerticalCovers,
   phaHorizontalCovers,
-  phaVerticalCovers, ringHorizontalCovers, ringVerticalCovers
+  phaVerticalCovers, ringHorizontalCovers, ringVerticalCovers,
+  atpHorizontalCovers,
+  atpVerticalCovers
 } from "./constants";
 
 export const themeColorState = selector({
@@ -35,6 +37,8 @@ export const themeColorState = selector({
         return '#ecb417';
       case 'ring':
         return '#B015ED';
+      case 'atp':
+        return '#ECB417';
       default:
         return '#E6007A';
     }
@@ -62,6 +66,8 @@ export const secondaryThemeColorState = selector({
         return '#FFF2CC';
       case 'ring':
         return '#F8E8FF';
+      case 'atp':
+        return '#FFE7A5';
       default:
         return '#FCE0EF';
     }
@@ -93,6 +99,8 @@ export const coversState = selector({
         return isVertical ? baseHorizontalCovers : dotVerticalCovers;
       case 'dego':
         return isVertical ? degoHorizontalCovers : degoVerticalCovers;
+      case 'atp':
+        return isVertical ? atpHorizontalCovers : atpVerticalCovers;
       default:
         return isVertical ? osnHorizontalCovers : osnVerticalCovers;
     }

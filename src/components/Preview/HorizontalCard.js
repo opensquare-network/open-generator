@@ -2,14 +2,15 @@ import React from "react";
 import TipCard from "./Card";
 import styled from "styled-components";
 import { useRecoilValue } from "recoil";
-import { bannerState, contentState, titleState, isSignatureState, signatureState } from "../../recoil/atoms";
+import { bannerState, contentState, titleState, isSignatureState, signatureState, nonOfficialState } from "../../recoil/atoms";
 import { Image } from "semantic-ui-react";
 import Markdown from "../common/Markdown";
 import { themeColorState } from "../../recoil/selectors";
 import Header from "./Header";
 import Footer from "./Footer";
-import Signature from "./Signature";
 import ExtraInfo from "./ExtraInfo";
+import Signature from "./Signature";
+import NonOfficialClaim from "./NonOfficialClaim";
 
 const Wrapper = styled(TipCard)`
   width: 660px;
@@ -43,6 +44,7 @@ export default function HorizontalCard() {
   const primaryColor = useRecoilValue(themeColorState);
   const isSignature = useRecoilValue(isSignatureState);
   const signature = useRecoilValue(signatureState);
+  const nonOfficial = useRecoilValue(nonOfficialState);
 
   return (
     <Wrapper id="horizontal-card">
@@ -56,8 +58,9 @@ export default function HorizontalCard() {
           md={content}
           primaryColor={primaryColor}
         />
-        <ExtraInfo>
+        <ExtraInfo show={(signature && isSignature) || nonOfficial}>
           <Signature name={signature} show={isSignature} />
+          <NonOfficialClaim show={nonOfficial} />
         </ExtraInfo>
         <Footer />
       </div>

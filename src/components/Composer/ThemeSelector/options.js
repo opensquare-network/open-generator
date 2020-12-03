@@ -55,6 +55,12 @@ const options = [
     value: 'osn',
     image: { src: '/imgs/opensquare-logo.svg', avatar: true }
   },
+  {
+    key: 'atp',
+    text: 'Alaya',
+    value: 'atp',
+    image: { src: '/imgs/alaya-logo.svg', avatar: true }
+  },
 ];
 
 export default options;

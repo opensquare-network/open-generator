@@ -91,3 +91,11 @@ export const osnVerticalCovers = [
   '/imgs/opensquare/vertical/opensquare-2.png',
   '/imgs/opensquare/vertical/opensquare-3.png',
 ];
+
+export const atpHorizontalCovers = [
+  '/imgs/alaya/horizontal/alaya-1.png',
+];
+
+export const atpVerticalCovers = [
+  '/imgs/alaya/vertical/alaya-1.png',
+];
