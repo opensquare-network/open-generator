@@ -21,7 +21,7 @@ export default function Signature({name, show}) {
   if (show && name) {
     return (
       <Wrapper>
-        <span>Edit by <span>{name}</span></span>
+        <span>Edited by <span>{name}</span></span>
       </Wrapper>
     )
   } else {
