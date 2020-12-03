@@ -50,6 +50,12 @@ const options = [
     image: { src: '/imgs/dego-logo.png', avatar: true }
   },
   {
+    key: 'atp',
+    text: 'Alaya',
+    value: 'atp',
+    image: { src: '/imgs/alaya-logo.svg', avatar: true }
+  },
+  {
     key: 'osn',
     text: 'OpenSquare',
     value: 'osn',

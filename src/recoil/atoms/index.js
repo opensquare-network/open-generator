@@ -11,7 +11,9 @@ import {
   pcxHorizontalCovers,
   pcxVerticalCovers,
   phaHorizontalCovers,
-  phaVerticalCovers, ringHorizontalCovers, ringVerticalCovers
+  phaVerticalCovers, ringHorizontalCovers, ringVerticalCovers,
+  atpHorizontalCovers,
+  atpVerticalCovers
 } from "../constants";
 
 export const defaultToken = window.localStorage.getItem('token') || 'dot';
@@ -38,6 +40,8 @@ export function getDefaultBannerUrls(token, vertical) {
       return vertical ? baseHorizontalCovers : dotVerticalCovers;
     case 'dego':
       return vertical ? degoHorizontalCovers : degoVerticalCovers;
+    case 'atp':
+      return vertical ? atpHorizontalCovers : atpVerticalCovers;
     default:
       return vertical ? osnHorizontalCovers : osnVerticalCovers;
   }
