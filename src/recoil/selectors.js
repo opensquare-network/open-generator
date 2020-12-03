@@ -34,11 +34,10 @@ export const themeColorState = selector({
       case 'osn':
         return '#04D2C5';
       case 'pcx':
+      case 'atp':
         return '#ecb417';
       case 'ring':
         return '#B015ED';
-      case 'atp':
-        return '#ECB417';
       default:
         return '#E6007A';
     }
@@ -63,11 +62,10 @@ export const secondaryThemeColorState = selector({
       case 'osn':
         return '#D7F8F6';
       case 'pcx':
+      case 'atp':
         return '#FFF2CC';
       case 'ring':
         return '#F8E8FF';
-      case 'atp':
-        return '#FFE7A5';
       default:
         return '#FCE0EF';
     }
