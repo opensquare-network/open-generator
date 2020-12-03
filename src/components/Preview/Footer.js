@@ -19,8 +19,8 @@ const Wrapper = styled.footer`
 export default function Footer() {
   return (
     <Wrapper>
-      <span>Tip Card Powered by</span>
-      <Logo />
+        <span>Tip Card Powered by</span>
+        <Logo />
     </Wrapper>
   )
 }

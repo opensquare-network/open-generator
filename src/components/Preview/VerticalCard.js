@@ -2,12 +2,15 @@ import React from "react";
 import TipCard from "./Card";
 import styled from "styled-components";
 import { useRecoilValue } from "recoil";
-import { bannerState, contentState, titleState, tokenState } from "../../recoil/atoms";
+import { bannerState, contentState, titleState, tokenState, isSignatureState, signatureState, nonOfficialState } from "../../recoil/atoms";
 import { Image } from "semantic-ui-react";
 import Header from "./Header";
 import Markdown from "../common/Markdown";
 import { themeColorState } from "../../recoil/selectors";
 import Footer from "./Footer";
+import ExtraInfo from "./ExtraInfo";
+import Signature from "./Signature";
+import NonOfficialClaim from "./NonOfficialClaim";
 
 const Wrapper = styled(TipCard)`
   width: 320px;
@@ -39,6 +42,9 @@ export default function VerticalCard() {
   const content = useRecoilValue(contentState);
   const primaryColor = useRecoilValue(themeColorState);
   const token = useRecoilValue(tokenState);
+  const isSignature = useRecoilValue(isSignatureState);
+  const signature = useRecoilValue(signatureState);
+  const nonOfficial = useRecoilValue(nonOfficialState);
 
   const linkColor = token === 'pha' ? 'rgba(0, 0, 0, 0.84)' : primaryColor
 
@@ -52,6 +58,10 @@ export default function VerticalCard() {
           md={content}
           primaryColor={linkColor}
         />
+        <ExtraInfo show={(signature && isSignature) || nonOfficial}>
+          <Signature name={signature} show={isSignature} />
+          <NonOfficialClaim show={nonOfficial} />
+        </ExtraInfo>
         <Footer />
       </div>
     </Wrapper>

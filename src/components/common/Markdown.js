@@ -15,7 +15,7 @@ export default styled(Markdown)`
 	&, &.mde-preview-content {
 		font-size: 14px;
 		line-height: 24px;
-		margin-bottom: 2rem;
+		margin-bottom: 20px;
 		color: rgba(0, 0, 0, 0.84);
 		overflow-wrap: break-word;
 
