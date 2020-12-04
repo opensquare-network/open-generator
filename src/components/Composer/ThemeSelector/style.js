@@ -35,9 +35,10 @@ export default function Style({ active = false, vertical = true, color, secondar
       bgColor={secondaryColor}
       active={active}
       onClick={() => {
-      setBanner(getDefaultBannerUrls(token, vertical)[0]);
-      setVertical(vertical)
-    }}>
+        setBanner(getDefaultBannerUrls(token, vertical)[0]);
+        setVertical(vertical);
+        window.localStorage.setItem('og-is-vertical', vertical);
+      }}>
       <Inner active={active} vertical={vertical} color={color} />
     </Wrapper>
   )

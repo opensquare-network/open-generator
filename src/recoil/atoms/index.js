@@ -25,7 +25,8 @@ import {
 
 export const defaultToken = window.localStorage.getItem('token') || 'dot';
 
-const defaultIsVertical = true;
+const storedVertical = window.localStorage.getItem('og-is-vertical');
+const defaultIsVertical = typeof storedVertical === 'undefined' ? true : !!JSON.parse(storedVertical);
 
 export function getDefaultBannerUrls(token, vertical) {
   switch (token) {
