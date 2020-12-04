@@ -37,6 +37,22 @@ export const phaVerticalCovers = [
   '/imgs/phala/vertical/Phala-3.png',
 ];
 
+export const bncHorizontalCovers = [
+  '/imgs/bifrost/horizontal/H-1.png',
+  '/imgs/bifrost/horizontal/H-2.png',
+  '/imgs/bifrost/horizontal/H-3.png',
+  '/imgs/bifrost/horizontal/H-4.png',
+  '/imgs/bifrost/horizontal/H-5.png',
+];
+
+export const bncVerticalCovers = [
+  '/imgs/bifrost/vertical/V-1.png',
+  '/imgs/bifrost/vertical/V-2.png',
+  '/imgs/bifrost/vertical/V-3.png',
+  '/imgs/bifrost/vertical/V-4.png',
+  '/imgs/bifrost/vertical/V-5.png',
+];
+
 export const cruHorizontalCovers = [
   '/imgs/crust/horizontal/crust-1.png',
 ];

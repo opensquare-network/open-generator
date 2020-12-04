@@ -22,6 +22,12 @@ const GlobalStyle = createGlobalStyle`
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
       monospace;
   }
+  
+  @media only screen and (min-width: 992px) {
+    .ui.selection.dropdown .menu {
+      max-height: 32rem;
+    }
+  }
 `;
 
 export default GlobalStyle;

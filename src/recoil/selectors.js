@@ -1,19 +1,27 @@
 import { selector } from "recoil";
 import { isVerticalState, tokenState } from "./atoms";
 import {
+  atpHorizontalCovers,
+  atpVerticalCovers,
   baseHorizontalCovers,
+  bncHorizontalCovers,
+  bncVerticalCovers,
   cruHorizontalCovers,
-  cruVerticalCovers, degoHorizontalCovers, degoVerticalCovers,
+  cruVerticalCovers,
+  degoHorizontalCovers,
+  degoVerticalCovers,
   dotHorizontalCovers,
   dotVerticalCovers,
   ksmHorizontalCovers,
   ksmVerticalCovers,
   osnHorizontalCovers,
-  osnVerticalCovers, pcxHorizontalCovers, pcxVerticalCovers,
+  osnVerticalCovers,
+  pcxHorizontalCovers,
+  pcxVerticalCovers,
   phaHorizontalCovers,
-  phaVerticalCovers, ringHorizontalCovers, ringVerticalCovers,
-  atpHorizontalCovers,
-  atpVerticalCovers
+  phaVerticalCovers,
+  ringHorizontalCovers,
+  ringVerticalCovers
 } from "./constants";
 
 export const themeColorState = selector({
@@ -26,6 +34,7 @@ export const themeColorState = selector({
         return '#E6007A';
       case 'dego':
       case 'ksm':
+      case 'bnc':
         return '#000000';
       case 'pha':
         return '#D2FD60';
@@ -54,6 +63,7 @@ export const secondaryThemeColorState = selector({
         return '#FCE0EF';
       case 'dego':
       case 'ksm':
+      case 'bnc':
         return '#E0E0E0';
       case 'pha':
         return '#F8FEE5';
@@ -99,6 +109,8 @@ export const coversState = selector({
         return isVertical ? degoHorizontalCovers : degoVerticalCovers;
       case 'atp':
         return isVertical ? atpHorizontalCovers : atpVerticalCovers;
+      case 'bnc':
+        return isVertical ? bncHorizontalCovers : bncVerticalCovers;
       default:
         return isVertical ? osnHorizontalCovers : osnVerticalCovers;
     }

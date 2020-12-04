@@ -1,7 +1,14 @@
 import { atom } from "recoil";
 import {
+  atpHorizontalCovers,
+  atpVerticalCovers,
   baseHorizontalCovers,
-  cruHorizontalCovers, cruVerticalCovers, degoHorizontalCovers, degoVerticalCovers,
+  bncHorizontalCovers,
+  bncVerticalCovers,
+  cruHorizontalCovers,
+  cruVerticalCovers,
+  degoHorizontalCovers,
+  degoVerticalCovers,
   dotHorizontalCovers,
   dotVerticalCovers,
   ksmHorizontalCovers,
@@ -11,9 +18,9 @@ import {
   pcxHorizontalCovers,
   pcxVerticalCovers,
   phaHorizontalCovers,
-  phaVerticalCovers, ringHorizontalCovers, ringVerticalCovers,
-  atpHorizontalCovers,
-  atpVerticalCovers
+  phaVerticalCovers,
+  ringHorizontalCovers,
+  ringVerticalCovers
 } from "../constants";
 
 export const defaultToken = window.localStorage.getItem('token') || 'dot';
@@ -42,6 +49,8 @@ export function getDefaultBannerUrls(token, vertical) {
       return vertical ? degoHorizontalCovers : degoVerticalCovers;
     case 'atp':
       return vertical ? atpHorizontalCovers : atpVerticalCovers;
+    case 'bnc':
+      return vertical ? bncHorizontalCovers : bncVerticalCovers;
     default:
       return vertical ? osnHorizontalCovers : osnVerticalCovers;
   }

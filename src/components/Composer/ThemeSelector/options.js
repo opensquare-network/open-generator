@@ -20,16 +20,22 @@ const options = [
     image: { src: '/imgs/phala-logo.svg', avatar: true }
   },
   {
-    key: 'cru',
-    text: 'Crust',
-    value: 'cru',
-    image: { src: '/imgs/crust-logo.jpeg', avatar: true }
-  },
-  {
     key: 'pcx',
     text: 'ChainX',
     value: 'pcx',
     image: { src: '/imgs/chainx-logo.png', avatar: true }
+  },
+  {
+    key: 'bnc',
+    text: 'Bifrost',
+    value: 'bnc',
+    image: { src: '/imgs/bifrost-logo.svg', avatar: true }
+  },
+  {
+    key: 'cru',
+    text: 'Crust',
+    value: 'cru',
+    image: { src: '/imgs/crust-logo.jpeg', avatar: true }
   },
   {
     key: 'ring',

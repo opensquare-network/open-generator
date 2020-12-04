@@ -42,7 +42,7 @@ const Wrapper = styled.section`
 export default function CoverSelector() {
   const covers = useRecoilValue(coversState);
   const isVertical = useRecoilValue(isVerticalState);
-  const chunks = chunk(covers, 3);
+  const chunks = chunk(covers, isVertical ? 3 : 5);
   const [banner, setBanner] = useRecoilState(bannerState);
   const color = useRecoilValue(themeColorState);
 
