@@ -2,7 +2,8 @@ import React from "react";
 import TipCard from "./Card";
 import styled from "styled-components";
 import { useRecoilValue } from "recoil";
-import { bannerState, contentState, titleState, tokenState, isSignatureState, signatureState, nonOfficialState } from "../../recoil/atoms";
+import { bannerState, titleState, tokenState, isSignatureState, signatureState, nonOfficialState } from "../../recoil/atoms";
+import { contentImageState } from "../../recoil/selectors";
 import { Image } from "semantic-ui-react";
 import Header from "./Header";
 import Markdown from "../common/Markdown";
@@ -39,12 +40,12 @@ const Wrapper = styled(TipCard)`
 export default function VerticalCard() {
   const banner = useRecoilValue(bannerState);
   const title = useRecoilValue(titleState);
-  const content = useRecoilValue(contentState);
   const primaryColor = useRecoilValue(themeColorState);
   const token = useRecoilValue(tokenState);
   const isSignature = useRecoilValue(isSignatureState);
   const signature = useRecoilValue(signatureState);
   const nonOfficial = useRecoilValue(nonOfficialState);
+  const contentImage = useRecoilValue(contentImageState);
 
   const linkColor = token === 'pha' ? 'rgba(0, 0, 0, 0.84)' : primaryColor
 
@@ -55,8 +56,9 @@ export default function VerticalCard() {
         <Header>{title}</Header>
         <Markdown className="main"
           isPreview={true}
-          md={content}
+          md={contentImage.content}
           primaryColor={linkColor}
+          images={contentImage.images}
         />
         <ExtraInfo show={(signature && isSignature) || nonOfficial}>
           <Signature name={signature} show={isSignature} />

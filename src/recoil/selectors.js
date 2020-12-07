@@ -1,5 +1,5 @@
 import { selector } from "recoil";
-import { isVerticalState, tokenState } from "./atoms";
+import { isVerticalState, tokenState, contentState } from "./atoms";
 import {
   atpHorizontalCovers,
   atpVerticalCovers,
@@ -114,5 +114,25 @@ export const coversState = selector({
       default:
         return isVertical ? osnHorizontalCovers : osnVerticalCovers;
     }
+  }
+});
+
+export const contentImageState = selector({
+  key: 'contentImageState',
+  get: ({ get }) => {
+    const content = get(contentState);
+    const allImages = [...content.matchAll(/!\[\S*\]\(\S*\)/g)];
+    const editImages = [...content.matchAll(/!\[\S*\]\(\S*\)\(\s*(\d+)(?:px)?\s*\*\s*(\d+)(?:px)?\s*\)/g)];
+    const images = [];
+    console.log({allImages, editImages})
+    editImages.forEach((item) => {
+      for (let i = 0; i < allImages.length; i++) {
+        if (allImages[i].index === item.index) {
+          images.push({index: i, width: item[1], height: item[2]});
+        }
+      }
+    })
+    const c = content.replace(/\(\s*(\d+)(?:px)?\s*\*\s*(\d+)(?:px)?\s*\)/g, '');
+    return { content: c, images }
   }
 });
