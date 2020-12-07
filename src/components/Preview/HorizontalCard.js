@@ -2,7 +2,8 @@ import React from "react";
 import TipCard from "./Card";
 import styled from "styled-components";
 import { useRecoilValue } from "recoil";
-import { bannerState, contentState, titleState, isSignatureState, signatureState, nonOfficialState } from "../../recoil/atoms";
+import { bannerState, titleState, isSignatureState, signatureState, nonOfficialState } from "../../recoil/atoms";
+import { contentImageState } from "../../recoil/selectors";
 import { Image } from "semantic-ui-react";
 import Markdown from "../common/Markdown";
 import { themeColorState } from "../../recoil/selectors";
@@ -40,11 +41,11 @@ const Wrapper = styled(TipCard)`
 export default function HorizontalCard() {
   const banner = useRecoilValue(bannerState);
   const title = useRecoilValue(titleState);
-  const content = useRecoilValue(contentState);
   const primaryColor = useRecoilValue(themeColorState);
   const isSignature = useRecoilValue(isSignatureState);
   const signature = useRecoilValue(signatureState);
   const nonOfficial = useRecoilValue(nonOfficialState);
+  const contentImage = useRecoilValue(contentImageState);
 
   return (
     <Wrapper id="horizontal-card">
@@ -55,8 +56,9 @@ export default function HorizontalCard() {
         <Header>{title}</Header>
         <Markdown className="main"
           isPreview={true}
-          md={content}
+          md={contentImage.content}
           primaryColor={primaryColor}
+          images={contentImage.images}
         />
         <ExtraInfo show={(signature && isSignature) || nonOfficial}>
           <Signature name={signature} show={isSignature} />

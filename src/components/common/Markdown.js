@@ -5,9 +5,23 @@ import gfm from 'remark-gfm'
 
 const Markdown = ({ className, isPreview = false, md }) => {
   return <ReactMarkdown
-    plugins={[gfm]}
-    className={isPreview ? `${className} mde-preview-content` : className} source={md}
-                        linkTarget='_blank' />;
+		plugins={[gfm]}
+		className={isPreview ? `${className} mde-preview-content` : className} source={md} linkTarget='_blank' />;
+};
+
+function getImage(img) {
+	return `
+		[src='${img.src}'] {
+			height: ${img.height}px;
+			width: ${img.width}px;
+		}
+	`
+};
+
+function getImages(images) {
+	if (!images || images.length === 0) return '';
+	const str = images.reduce((accumulator, current) => accumulator + getImage(current), '');
+	return str;
 };
 
 export default styled(Markdown)`
@@ -80,9 +94,11 @@ export default styled(Markdown)`
 			display: block;
 			margin: 0 auto;
 			
-			width: unset !important;
-			height: 148px !important;
+			width: unset;
+			height: 148px;
 		}
+
+		${p => getImages(p.images)}
 
 		pre {
 			background-color: #EBF0F5;
