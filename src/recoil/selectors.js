@@ -121,17 +121,9 @@ export const contentImageState = selector({
   key: 'contentImageState',
   get: ({ get }) => {
     const content = get(contentState);
-    const allImages = [...content.matchAll(/!\[\S*\]\(\S*\)/g)];
-    const editImages = [...content.matchAll(/!\[\S*\]\(\S*\)\(\s*(\d+)(?:px)?\s*\*\s*(\d+)(?:px)?\s*\)/g)];
-    const images = [];
-    editImages.forEach((item) => {
-      for (let i = 0; i < allImages.length; i++) {
-        if (allImages[i].index === item.index) {
-          images.push({index: i, width: item[1], height: item[2]});
-        }
-      }
-    })
-    const c = content.replace(/\(\s*(\d+)(?:px)?\s*\*\s*(\d+)(?:px)?\s*\)/g, '');
-    return { content: c, images }
+    const editImages = [...content.matchAll(/(!\[[^\]]*\]\((.*?)\s*("(?:.*[^"])")?\s*\))\(\s*(\d+)(?:px)?\s*\*\s*(\d+)(?:px)?\s*\)/g)];
+    const images = editImages.map(item => ({src: item[2], width: item[4], height: item[5]}));
+    const newContent = content.replace(/(!\[[^\]]*\]\((.*?)\s*("(?:.*[^"])")?\s*\))\(\s*\d+(?:px)?\s*\*\s*\d+(?:px)?\s*\)/g, '$1');
+    return { content: newContent, images }
   }
 });
