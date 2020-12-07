@@ -11,7 +11,7 @@ const Markdown = ({ className, isPreview = false, md }) => {
 
 function getImage(img) {
 	return `
-		img:nth-of-type(${img.index + 1}) {
+		p:nth-of-type(${img.index + 1}) > img {
 			height: ${img.height}px;
 			width: ${img.width}px;
 		}

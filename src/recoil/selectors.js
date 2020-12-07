@@ -124,7 +124,6 @@ export const contentImageState = selector({
     const allImages = [...content.matchAll(/!\[\S*\]\(\S*\)/g)];
     const editImages = [...content.matchAll(/!\[\S*\]\(\S*\)\(\s*(\d+)(?:px)?\s*\*\s*(\d+)(?:px)?\s*\)/g)];
     const images = [];
-    console.log({allImages, editImages})
     editImages.forEach((item) => {
       for (let i = 0; i < allImages.length; i++) {
         if (allImages[i].index === item.index) {
