@@ -13,6 +13,8 @@ import {
   dotVerticalCovers,
   ksmHorizontalCovers,
   ksmVerticalCovers,
+  mxcHorizontalCovers,
+  mxcVerticalCovers,
   osnHorizontalCovers,
   osnVerticalCovers,
   pcxHorizontalCovers,
@@ -52,6 +54,8 @@ export function getDefaultBannerUrls(token, vertical) {
       return vertical ? atpHorizontalCovers : atpVerticalCovers;
     case 'bnc':
       return vertical ? bncHorizontalCovers : bncVerticalCovers;
+    case 'mxc':
+      return vertical ? mxcHorizontalCovers : mxcVerticalCovers;
     default:
       return vertical ? osnHorizontalCovers : osnVerticalCovers;
   }

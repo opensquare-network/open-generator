@@ -115,3 +115,15 @@ export const atpHorizontalCovers = [
 export const atpVerticalCovers = [
   '/imgs/alaya/vertical/alaya-1.png',
 ];
+
+export const mxcHorizontalCovers = [
+  '/imgs/mxc/horizontal/mxc-1.jpg',
+  '/imgs/mxc/horizontal/mxc-2.jpg',
+  '/imgs/mxc/horizontal/mxc-3.jpg',
+];
+
+export const mxcVerticalCovers = [
+  '/imgs/mxc/vertical/mxc-1.jpg',
+  '/imgs/mxc/vertical/mxc-2.jpg',
+  '/imgs/mxc/vertical/mxc-3.jpg',
+];
