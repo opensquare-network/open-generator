@@ -32,6 +32,12 @@ const options = [
     image: { src: '/imgs/bifrost-logo.svg', avatar: true }
   },
   {
+    key: 'mxc',
+    text: 'MXC',
+    value: 'mxc',
+    image: { src: '/imgs/mxc-logo.png', avatar: true }
+  },
+  {
     key: 'cru',
     text: 'Crust',
     value: 'cru',

@@ -14,6 +14,8 @@ import {
   dotVerticalCovers,
   ksmHorizontalCovers,
   ksmVerticalCovers,
+  mxcHorizontalCovers,
+  mxcVerticalCovers,
   osnHorizontalCovers,
   osnVerticalCovers,
   pcxHorizontalCovers,
@@ -41,6 +43,7 @@ export const themeColorState = selector({
       case 'cru':
         return '#fa8c16';
       case 'osn':
+      case 'mxc':
         return '#04D2C5';
       case 'pcx':
       case 'atp':
@@ -70,6 +73,7 @@ export const secondaryThemeColorState = selector({
       case 'cru':
         return '#FDDDBB';
       case 'osn':
+      case 'mxc':
         return '#D7F8F6';
       case 'pcx':
       case 'atp':
@@ -111,6 +115,8 @@ export const coversState = selector({
         return isVertical ? atpHorizontalCovers : atpVerticalCovers;
       case 'bnc':
         return isVertical ? bncHorizontalCovers : bncVerticalCovers;
+      case 'mxc':
+        return isVertical ? mxcHorizontalCovers : mxcVerticalCovers;
       default:
         return isVertical ? osnHorizontalCovers : osnVerticalCovers;
     }
