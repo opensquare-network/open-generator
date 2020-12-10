@@ -68,6 +68,12 @@ const options = [
     image: { src: '/imgs/alaya-logo.svg', avatar: true }
   },
   {
+    key: 'litentry',
+    text: 'Litentry',
+    value: 'litentry',
+    image: { src: '/imgs/litentry-logo.png', avatar: true }
+  },
+  {
     key: 'osn',
     text: 'OpenSquare',
     value: 'osn',

@@ -127,3 +127,11 @@ export const mxcVerticalCovers = [
   '/imgs/mxc/vertical/mxc-2.jpg',
   '/imgs/mxc/vertical/mxc-3.jpg',
 ];
+
+export const litentryHorizontalCovers = [
+  '/imgs/litentry/horizontal/litentry-1.png',
+];
+
+export const litentryVerticalCovers = [
+  '/imgs/litentry/vertical/litentry-1.png',
+];
