@@ -14,6 +14,8 @@ import {
   dotVerticalCovers,
   ksmHorizontalCovers,
   ksmVerticalCovers,
+  litentryHorizontalCovers,
+  litentryVerticalCovers,
   mxcHorizontalCovers,
   mxcVerticalCovers,
   osnHorizontalCovers,
@@ -50,6 +52,8 @@ export const themeColorState = selector({
         return '#ecb417';
       case 'ring':
         return '#B015ED';
+      case 'litentry':
+        return '#1BC675';
       default:
         return '#E6007A';
     }
@@ -80,6 +84,8 @@ export const secondaryThemeColorState = selector({
         return '#FFF2CC';
       case 'ring':
         return '#F8E8FF';
+      case 'litentry':
+        return '#CFFFE8';
       default:
         return '#FCE0EF';
     }
@@ -117,6 +123,8 @@ export const coversState = selector({
         return isVertical ? bncHorizontalCovers : bncVerticalCovers;
       case 'mxc':
         return isVertical ? mxcHorizontalCovers : mxcVerticalCovers;
+      case 'litentry':
+        return isVertical ? litentryHorizontalCovers : litentryVerticalCovers;
       default:
         return isVertical ? osnHorizontalCovers : osnVerticalCovers;
     }
