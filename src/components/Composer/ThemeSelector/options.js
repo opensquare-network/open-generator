@@ -38,6 +38,12 @@ const options = [
     image: { src: '/imgs/mxc-logo.png', avatar: true }
   },
   {
+    key: 'litentry',
+    text: 'Litentry',
+    value: 'litentry',
+    image: { src: '/imgs/litentry-logo.png', avatar: true }
+  },
+  {
     key: 'cru',
     text: 'Crust',
     value: 'cru',
@@ -66,12 +72,6 @@ const options = [
     text: 'Alaya',
     value: 'atp',
     image: { src: '/imgs/alaya-logo.svg', avatar: true }
-  },
-  {
-    key: 'litentry',
-    text: 'Litentry',
-    value: 'litentry',
-    image: { src: '/imgs/litentry-logo.png', avatar: true }
   },
   {
     key: 'osn',

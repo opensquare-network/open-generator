@@ -39,6 +39,10 @@ const StyledDropDown = styled(Dropdown)`
   i {
     top: unset !important;
   }
+
+  .menu {
+    max-height: fit-content !important;
+  }
 `;
 
 export default function ThemeSelector() {
@@ -58,6 +62,7 @@ export default function ThemeSelector() {
           options={options}
           defaultValue={defaultValue}
           selection
+          scrolling={false}
           onChange={(v, d) => {
             const token = String(d.value);
             setToken(token);
