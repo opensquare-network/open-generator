@@ -4,6 +4,8 @@ import {
   atpHorizontalCovers,
   atpVerticalCovers,
   baseHorizontalCovers,
+  bdtHorizontalCovers,
+  bdtVerticalCovers,
   bncHorizontalCovers,
   bncVerticalCovers,
   cruHorizontalCovers,
@@ -35,6 +37,7 @@ export const themeColorState = selector({
 
     switch (token) {
       case 'dot':
+      case 'bdt':
         return '#E6007A';
       case 'dego':
       case 'ksm':
@@ -67,6 +70,7 @@ export const secondaryThemeColorState = selector({
 
     switch (token) {
       case 'dot':
+      case 'bdt':
         return '#FCE0EF';
       case 'dego':
       case 'ksm':
@@ -125,6 +129,8 @@ export const coversState = selector({
         return isVertical ? mxcHorizontalCovers : mxcVerticalCovers;
       case 'litentry':
         return isVertical ? litentryHorizontalCovers : litentryVerticalCovers;
+      case 'bdt':
+        return isVertical ? bdtHorizontalCovers : bdtVerticalCovers;
       default:
         return isVertical ? osnHorizontalCovers : osnVerticalCovers;
     }

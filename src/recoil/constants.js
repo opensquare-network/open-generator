@@ -135,3 +135,11 @@ export const litentryHorizontalCovers = [
 export const litentryVerticalCovers = [
   '/imgs/litentry/vertical/litentry-1.png',
 ];
+
+export const bdtHorizontalCovers = [
+  '/imgs/bandot/horizontal/bandot-1.jpeg',
+];
+
+export const bdtVerticalCovers = [
+  '/imgs/bandot/vertical/bandot-1.jpeg',
+];
