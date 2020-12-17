@@ -56,6 +56,12 @@ const options = [
     image: { src: '/imgs/darwinia-logo.png', avatar: true }
   },
   {
+    key: 'bdt',
+    text: 'Bandot',
+    value: 'bdt',
+    image: { src: '/imgs/bandot-logo.jpeg', avatar: true }
+  },
+  {
     key: 'base',
     text: 'PolkaBase',
     value: 'base',
