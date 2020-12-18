@@ -8,6 +8,8 @@ import { ReactComponent as Download } from './download.svg'
 import html2canvas from "html2canvas";
 import { v4 as uuidv4 } from 'uuid';
 
+import { testImgSrc } from "../../utils"
+
 const Wrapper = styled.section`
   display: flex;
   align-items: center;
@@ -35,6 +37,12 @@ export default function Preview() {
     if (!element) {
       return
     }
+
+    const imgs = element.querySelector('.content').querySelectorAll('img')
+    const imgArray = Object.values(imgs)
+    await Promise.all(imgArray.map(async item => {
+      item.src = await testImgSrc(item.src)
+    }))
 
     const canvas = await html2canvas(element, {
       useCORS: true,
