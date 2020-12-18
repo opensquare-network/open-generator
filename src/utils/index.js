@@ -18,7 +18,7 @@ export async function testImgSrc(src) {
     const blob = await img.blob()
     const getBase64 = (image) => (
       new Promise((resolve, reject) => {
-        const reader = new FileReader;
+        const reader = new FileReader();
         reader.onerror = reject;
         reader.onload = () => {
           resolve(reader.result);

@@ -27,7 +27,11 @@ import {
   phaHorizontalCovers,
   phaVerticalCovers,
   ringHorizontalCovers,
-  ringVerticalCovers
+  ringVerticalCovers,
+  trueHorizontalCovers,
+  trueVerticalCovers,
+  mapHorizontalCovers,
+  mapVerticalCovers,
 } from "./constants";
 
 export const themeColorState = selector({
@@ -42,6 +46,8 @@ export const themeColorState = selector({
       case 'dego':
       case 'ksm':
       case 'bnc':
+      case 'true':
+      case 'map':
         return '#000000';
       case 'pha':
         return '#D2FD60';
@@ -75,6 +81,8 @@ export const secondaryThemeColorState = selector({
       case 'dego':
       case 'ksm':
       case 'bnc':
+      case 'true':
+      case 'map':
         return '#E0E0E0';
       case 'pha':
         return '#F8FEE5';
@@ -131,6 +139,10 @@ export const coversState = selector({
         return isVertical ? litentryHorizontalCovers : litentryVerticalCovers;
       case 'bdt':
         return isVertical ? bdtHorizontalCovers : bdtVerticalCovers;
+      case 'true':
+        return isVertical ? trueHorizontalCovers : trueVerticalCovers;
+      case 'map':
+        return isVertical ? mapHorizontalCovers : mapVerticalCovers;
       default:
         return isVertical ? osnHorizontalCovers : osnVerticalCovers;
     }
