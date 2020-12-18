@@ -27,7 +27,6 @@ export async function testImgSrc(src) {
       })
     )
     const base64 = await getBase64(blob)
-    console.log({base64})
     return base64
   } else {
     return src
