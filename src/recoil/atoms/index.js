@@ -26,7 +26,11 @@ import {
   phaHorizontalCovers,
   phaVerticalCovers,
   ringHorizontalCovers,
-  ringVerticalCovers
+  ringVerticalCovers,
+  trueHorizontalCovers,
+  trueVerticalCovers,
+  mapHorizontalCovers,
+  mapVerticalCovers
 } from "../constants";
 
 export const defaultToken = window.localStorage.getItem('token') || 'dot';
@@ -64,6 +68,10 @@ export function getDefaultBannerUrls(token, vertical) {
       return vertical ? litentryHorizontalCovers : litentryVerticalCovers;
     case 'bdt':
       return vertical ? bdtHorizontalCovers : bdtVerticalCovers;
+    case 'true':
+      return vertical ? trueHorizontalCovers : trueVerticalCovers;
+    case 'map':
+      return vertical ? mapHorizontalCovers : mapVerticalCovers;
     default:
       return vertical ? osnHorizontalCovers : osnVerticalCovers;
   }

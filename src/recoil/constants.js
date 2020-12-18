@@ -143,3 +143,23 @@ export const bdtHorizontalCovers = [
 export const bdtVerticalCovers = [
   '/imgs/bandot/vertical/bandot-1.jpeg',
 ];
+
+export const trueHorizontalCovers = [
+  '/imgs/truechain/horizontal/truechain-1.jpeg',
+];
+
+export const trueVerticalCovers = [
+  '/imgs/opensquare/vertical/opensquare-1.png',
+  '/imgs/opensquare/vertical/opensquare-2.png',
+  '/imgs/opensquare/vertical/opensquare-3.png',
+];
+
+export const mapHorizontalCovers = [
+  '/imgs/mapprotocal/horizontal/mapprotocal-1.png'
+]
+
+export const mapVerticalCovers = [
+  '/imgs/opensquare/vertical/opensquare-1.png',
+  '/imgs/opensquare/vertical/opensquare-2.png',
+  '/imgs/opensquare/vertical/opensquare-3.png',
+];

@@ -62,6 +62,18 @@ const options = [
     image: { src: '/imgs/bandot-logo.jpeg', avatar: true }
   },
   {
+    key: 'true',
+    text: 'TrueChain',
+    value: 'true',
+    image: { src: '/imgs/truechain-logo.jpeg', avatar: true }
+  },
+  {
+    key: 'map',
+    text: 'MapProtocal',
+    value: 'map',
+    image: { src: '/imgs/mapprotocal-logo.png', avatar: true }
+  },
+  {
     key: 'base',
     text: 'PolkaBase',
     value: 'base',
