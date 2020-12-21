@@ -1,165 +1,165 @@
 export const dotHorizontalCovers = [
-  '/imgs/polkadot/horizontal/Polkadot-1.png',
-  '/imgs/polkadot/horizontal/Polkadot-2.png',
-  '/imgs/polkadot/horizontal/Polkadot-3.png',
-  '/imgs/polkadot/horizontal/Polkadot-4.png',
-  '/imgs/polkadot/horizontal/Polkadot-5.png',
-  '/imgs/polkadot/horizontal/Polkadot-6.png',
+  '/imgs/polkadot/horizontal/polkadot-1.webp',
+  '/imgs/polkadot/horizontal/polkadot-2.webp',
+  '/imgs/polkadot/horizontal/polkadot-3.webp',
+  '/imgs/polkadot/horizontal/polkadot-4.webp',
+  '/imgs/polkadot/horizontal/polkadot-5.webp',
+  '/imgs/polkadot/horizontal/polkadot-6.webp',
 ];
 
 export const dotVerticalCovers = [
-  '/imgs/polkadot/vertical/polkadot-1.png',
-  '/imgs/polkadot/vertical/polkadot-2.png',
-  '/imgs/polkadot/vertical/polkadot-3.png',
+  '/imgs/polkadot/vertical/polkadot-1.webp',
+  '/imgs/polkadot/vertical/polkadot-2.webp',
+  '/imgs/polkadot/vertical/polkadot-3.webp',
 ];
 
 export const ksmHorizontalCovers = [
-  '/imgs/kusama/horizontal/Kusama-1.png',
-  '/imgs/kusama/horizontal/Kusama-2.png',
-  '/imgs/kusama/horizontal/Kusama-3.png',
+  '/imgs/kusama/horizontal/kusama-1.webp',
+  '/imgs/kusama/horizontal/kusama-2.webp',
+  '/imgs/kusama/horizontal/kusama-3.webp',
 ];
 
 export const ksmVerticalCovers = [
-  '/imgs/kusama/vertical/kusama-1.png',
-  '/imgs/kusama/vertical/kusama-2.png',
-  '/imgs/kusama/vertical/kusama-3.png',
+  '/imgs/kusama/vertical/kusama-1.webp',
+  '/imgs/kusama/vertical/kusama-2.webp',
+  '/imgs/kusama/vertical/kusama-3.webp',
 ];
 
 export const phaHorizontalCovers = [
-  '/imgs/phala/horizontal/Phala-1.png',
-  '/imgs/phala/horizontal/Phala-2.png',
-  '/imgs/phala/horizontal/Phala-3.png',
+  '/imgs/phala/horizontal/phala-1.webp',
+  '/imgs/phala/horizontal/phala-2.webp',
+  '/imgs/phala/horizontal/phala-3.webp',
 ];
 
 export const phaVerticalCovers = [
-  '/imgs/phala/vertical/Phala-1.png',
-  '/imgs/phala/vertical/Phala-2.png',
-  '/imgs/phala/vertical/Phala-3.png',
+  '/imgs/phala/vertical/phala-1.webp',
+  '/imgs/phala/vertical/phala-2.webp',
+  '/imgs/phala/vertical/phala-3.webp',
 ];
 
 export const bncHorizontalCovers = [
-  '/imgs/bifrost/horizontal/H-1.png',
-  '/imgs/bifrost/horizontal/H-2.png',
-  '/imgs/bifrost/horizontal/H-3.png',
-  '/imgs/bifrost/horizontal/H-4.png',
-  '/imgs/bifrost/horizontal/H-5.png',
+  '/imgs/bifrost/horizontal/bifrost-1.webp',
+  '/imgs/bifrost/horizontal/bifrost-2.webp',
+  '/imgs/bifrost/horizontal/bifrost-3.webp',
+  '/imgs/bifrost/horizontal/bifrost-4.webp',
+  '/imgs/bifrost/horizontal/bifrost-5.webp',
 ];
 
 export const bncVerticalCovers = [
-  '/imgs/bifrost/vertical/V-1.png',
-  '/imgs/bifrost/vertical/V-2.png',
-  '/imgs/bifrost/vertical/V-3.png',
-  '/imgs/bifrost/vertical/V-4.png',
-  '/imgs/bifrost/vertical/V-5.png',
+  '/imgs/bifrost/vertical/bifrost-1.webp',
+  '/imgs/bifrost/vertical/bifrost-2.webp',
+  '/imgs/bifrost/vertical/bifrost-3.webp',
+  '/imgs/bifrost/vertical/bifrost-4.webp',
+  '/imgs/bifrost/vertical/bifrost-5.webp',
 ];
 
 export const cruHorizontalCovers = [
-  '/imgs/crust/horizontal/crust-1.png',
+  '/imgs/crust/horizontal/crust-1.webp',
 ];
 
 export const cruVerticalCovers = [
-  '/imgs/crust/vertical/crust-1.png',
+  '/imgs/crust/vertical/crust-1.webp',
 ];
 
 export const pcxHorizontalCovers = [
-  '/imgs/chainx/horizontal/chainx-1.png',
-  '/imgs/chainx/horizontal/chainx-2.png',
+  '/imgs/chainx/horizontal/chainx-1.webp',
+  '/imgs/chainx/horizontal/chainx-2.webp',
 ];
 
 export const pcxVerticalCovers = [
-  '/imgs/chainx/vertical/chainx-1.png',
+  '/imgs/chainx/vertical/chainx-1.webp',
 ];
 
 export const ringHorizontalCovers = [
-  '/imgs/darwinia/horizontal/ring-1.jpg',
-  '/imgs/darwinia/horizontal/ring-2.jpg',
-  '/imgs/darwinia/horizontal/ring-3.jpg',
+  '/imgs/darwinia/horizontal/darwinia-1.webp',
+  '/imgs/darwinia/horizontal/darwinia-2.webp',
+  '/imgs/darwinia/horizontal/darwinia-3.webp',
 ];
 
 export const ringVerticalCovers = [
-  '/imgs/darwinia/vertical/ring-1.jpg',
-  '/imgs/darwinia/vertical/ring-2.jpg',
-  '/imgs/darwinia/vertical/ring-3.jpg',
+  '/imgs/darwinia/vertical/darwinia-1.webp',
+  '/imgs/darwinia/vertical/darwinia-2.webp',
+  '/imgs/darwinia/vertical/darwinia-3.webp',
 ];
 
 export const baseHorizontalCovers = [
-  '/imgs/polkabase/horizontal/PolkaBase-1.png',
+  '/imgs/polkabase/horizontal/polkabase-1.webp',
 ];
 
 export const degoHorizontalCovers = [
-  '/imgs/dego/horizontal/dego-1.png',
-  '/imgs/dego/horizontal/dego-2.png',
+  '/imgs/dego/horizontal/dego-1.webp',
+  '/imgs/dego/horizontal/dego-2.webp',
 ];
 
 export const degoVerticalCovers = [
-  '/imgs/dego/vertical/dego-1.png',
-  '/imgs/dego/vertical/dego-2.png',
+  '/imgs/dego/vertical/dego-1.webp',
+  '/imgs/dego/vertical/dego-2.webp',
 ];
 
 export const osnHorizontalCovers = [
-  '/imgs/opensquare/horizontal/OpenSquare-1.png',
-  '/imgs/opensquare/horizontal/OpenSquare-2.png',
-  '/imgs/opensquare/horizontal/OpenSquare-3.png',
+  '/imgs/opensquare/horizontal/opensquare-1.webp',
+  '/imgs/opensquare/horizontal/opensquare-2.webp',
+  '/imgs/opensquare/horizontal/opensquare-3.webp',
 ];
 
 export const osnVerticalCovers = [
-  '/imgs/opensquare/vertical/opensquare-1.png',
-  '/imgs/opensquare/vertical/opensquare-2.png',
-  '/imgs/opensquare/vertical/opensquare-3.png',
+  '/imgs/opensquare/vertical/opensquare-1.webp',
+  '/imgs/opensquare/vertical/opensquare-2.webp',
+  '/imgs/opensquare/vertical/opensquare-3.webp',
 ];
 
 export const atpHorizontalCovers = [
-  '/imgs/alaya/horizontal/alaya-1.png',
+  '/imgs/alaya/horizontal/alaya-1.webp',
 ];
 
 export const atpVerticalCovers = [
-  '/imgs/alaya/vertical/alaya-1.png',
+  '/imgs/alaya/vertical/alaya-1.webp',
 ];
 
 export const mxcHorizontalCovers = [
-  '/imgs/mxc/horizontal/mxc-1.jpg',
-  '/imgs/mxc/horizontal/mxc-2.jpg',
-  '/imgs/mxc/horizontal/mxc-3.jpg',
+  '/imgs/mxc/horizontal/mxc-1.webp',
+  '/imgs/mxc/horizontal/mxc-2.webp',
+  '/imgs/mxc/horizontal/mxc-3.webp',
 ];
 
 export const mxcVerticalCovers = [
-  '/imgs/mxc/vertical/mxc-1.jpg',
-  '/imgs/mxc/vertical/mxc-2.jpg',
-  '/imgs/mxc/vertical/mxc-3.jpg',
+  '/imgs/mxc/vertical/mxc-1.webp',
+  '/imgs/mxc/vertical/mxc-2.webp',
+  '/imgs/mxc/vertical/mxc-3.webp',
 ];
 
 export const litentryHorizontalCovers = [
-  '/imgs/litentry/horizontal/litentry-1.png',
+  '/imgs/litentry/horizontal/litentry-1.webp',
 ];
 
 export const litentryVerticalCovers = [
-  '/imgs/litentry/vertical/litentry-1.png',
+  '/imgs/litentry/vertical/litentry-1.webp',
 ];
 
 export const bdtHorizontalCovers = [
-  '/imgs/bandot/horizontal/bandot-1.jpeg',
+  '/imgs/bandot/horizontal/bandot-1.webp',
 ];
 
 export const bdtVerticalCovers = [
-  '/imgs/bandot/vertical/bandot-1.jpeg',
+  '/imgs/bandot/vertical/bandot-1.webp',
 ];
 
 export const trueHorizontalCovers = [
-  '/imgs/truechain/horizontal/truechain-1.jpeg',
+  '/imgs/truechain/horizontal/truechain-1.webp',
 ];
 
 export const trueVerticalCovers = [
-  '/imgs/opensquare/vertical/opensquare-1.png',
-  '/imgs/opensquare/vertical/opensquare-2.png',
-  '/imgs/opensquare/vertical/opensquare-3.png',
+  '/imgs/opensquare/vertical/opensquare-1.webp',
+  '/imgs/opensquare/vertical/opensquare-2.webp',
+  '/imgs/opensquare/vertical/opensquare-3.webp',
 ];
 
 export const mapHorizontalCovers = [
-  '/imgs/mapprotocal/horizontal/mapprotocal-1.png'
+  '/imgs/mapprotocal/horizontal/mapprotocal-1.webp'
 ]
 
 export const mapVerticalCovers = [
-  '/imgs/opensquare/vertical/opensquare-1.png',
-  '/imgs/opensquare/vertical/opensquare-2.png',
-  '/imgs/opensquare/vertical/opensquare-3.png',
+  '/imgs/opensquare/vertical/opensquare-1.webp',
+  '/imgs/opensquare/vertical/opensquare-2.webp',
+  '/imgs/opensquare/vertical/opensquare-3.webp',
 ];
