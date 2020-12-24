@@ -100,6 +100,8 @@ export const osnHorizontalCovers = [
   '/imgs/opensquare/horizontal/opensquare-1.webp',
   '/imgs/opensquare/horizontal/opensquare-2.webp',
   '/imgs/opensquare/horizontal/opensquare-3.webp',
+  '/imgs/opensquare/horizontal/opensquare-4.png',
+  '/imgs/opensquare/horizontal/opensquare-5.png',
 ];
 
 export const osnVerticalCovers = [
