@@ -1,4 +1,4 @@
-import { atom } from "recoil";
+import { atom } from 'recoil'
 import {
   atpHorizontalCovers,
   atpVerticalCovers,
@@ -30,89 +30,94 @@ import {
   trueHorizontalCovers,
   trueVerticalCovers,
   mapHorizontalCovers,
-  mapVerticalCovers
-} from "../constants";
+  mapVerticalCovers,
+  patHorizontalCovers,
+  patVerticalCovers,
+} from '../constants'
 
-export const defaultToken = window.localStorage.getItem('token') || 'dot';
+export const defaultToken = window.localStorage.getItem('token') || 'dot'
 
-const storedVertical = window.localStorage.getItem('og-is-vertical');
-const defaultIsVertical = typeof storedVertical === 'undefined' ? true : !!JSON.parse(storedVertical);
+const storedVertical = window.localStorage.getItem('og-is-vertical')
+const defaultIsVertical =
+  typeof storedVertical === 'undefined' ? true : !!JSON.parse(storedVertical)
 
 export function getDefaultBannerUrls(token, vertical) {
   switch (token) {
     case 'dot':
-      return vertical ? dotHorizontalCovers : dotVerticalCovers;
+      return vertical ? dotHorizontalCovers : dotVerticalCovers
     case 'ksm':
-      return vertical ? ksmHorizontalCovers : ksmVerticalCovers;
+      return vertical ? ksmHorizontalCovers : ksmVerticalCovers
     case 'pha':
-      return vertical ? phaHorizontalCovers : phaVerticalCovers;
+      return vertical ? phaHorizontalCovers : phaVerticalCovers
     case 'cru':
-      return vertical ? cruHorizontalCovers : cruVerticalCovers;
+      return vertical ? cruHorizontalCovers : cruVerticalCovers
     case 'osn':
-      return vertical ? osnHorizontalCovers : osnVerticalCovers;
+      return vertical ? osnHorizontalCovers : osnVerticalCovers
     case 'pcx':
-      return vertical ? pcxHorizontalCovers : pcxVerticalCovers;
+      return vertical ? pcxHorizontalCovers : pcxVerticalCovers
     case 'ring':
-      return vertical ? ringHorizontalCovers : ringVerticalCovers;
+      return vertical ? ringHorizontalCovers : ringVerticalCovers
     case 'base':
-      return vertical ? baseHorizontalCovers : dotVerticalCovers;
+      return vertical ? baseHorizontalCovers : dotVerticalCovers
     case 'dego':
-      return vertical ? degoHorizontalCovers : degoVerticalCovers;
+      return vertical ? degoHorizontalCovers : degoVerticalCovers
     case 'atp':
-      return vertical ? atpHorizontalCovers : atpVerticalCovers;
+      return vertical ? atpHorizontalCovers : atpVerticalCovers
     case 'bnc':
-      return vertical ? bncHorizontalCovers : bncVerticalCovers;
+      return vertical ? bncHorizontalCovers : bncVerticalCovers
     case 'mxc':
-      return vertical ? mxcHorizontalCovers : mxcVerticalCovers;
+      return vertical ? mxcHorizontalCovers : mxcVerticalCovers
     case 'litentry':
-      return vertical ? litentryHorizontalCovers : litentryVerticalCovers;
+      return vertical ? litentryHorizontalCovers : litentryVerticalCovers
     case 'bdt':
-      return vertical ? bdtHorizontalCovers : bdtVerticalCovers;
+      return vertical ? bdtHorizontalCovers : bdtVerticalCovers
     case 'true':
-      return vertical ? trueHorizontalCovers : trueVerticalCovers;
+      return vertical ? trueHorizontalCovers : trueVerticalCovers
     case 'map':
-      return vertical ? mapHorizontalCovers : mapVerticalCovers;
+      return vertical ? mapHorizontalCovers : mapVerticalCovers
+    case 'patract':
+      return vertical ? patHorizontalCovers : patVerticalCovers
     default:
-      return vertical ? osnHorizontalCovers : osnVerticalCovers;
+      return vertical ? osnHorizontalCovers : osnVerticalCovers
   }
 }
 
 export const tokenState = atom({
   key: 'tokenState',
-  default: defaultToken
-});
+  default: defaultToken,
+})
 
 export const isVerticalState = atom({
   key: 'isVerticalState',
-  default: defaultIsVertical
-});
+  default: defaultIsVertical,
+})
 
 export const bannerState = atom({
   key: 'bannerState',
-  default: getDefaultBannerUrls(defaultToken, defaultIsVertical)[0]
-});
+  default: getDefaultBannerUrls(defaultToken, defaultIsVertical)[0],
+})
 
 export const titleState = atom({
   key: 'titleState',
-  default: ''
-});
+  default: '',
+})
 
 export const contentState = atom({
   key: 'contentState',
-  default: ''
-});
+  default: '',
+})
 
 export const isSignatureState = atom({
   key: 'isSignatureState',
-  default: false
-});
+  default: false,
+})
 
 export const signatureState = atom({
   key: 'signatureState',
-  default: ''
-});
+  default: '',
+})
 
 export const nonOfficialState = atom({
   key: 'nonOfficialState',
-  default: false
-});
+  default: false,
+})

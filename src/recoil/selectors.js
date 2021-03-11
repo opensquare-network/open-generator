@@ -1,5 +1,5 @@
-import { selector } from "recoil";
-import { isVerticalState, tokenState, contentState } from "./atoms";
+import { selector } from 'recoil'
+import { isVerticalState, tokenState, contentState } from './atoms'
 import {
   atpHorizontalCovers,
   atpVerticalCovers,
@@ -32,130 +32,147 @@ import {
   trueVerticalCovers,
   mapHorizontalCovers,
   mapVerticalCovers,
-} from "./constants";
+  patHorizontalCovers,
+  patVerticalCovers,
+} from './constants'
 
 export const themeColorState = selector({
   key: 'themeColorState',
   get: ({ get }) => {
-    const token = get(tokenState);
+    const token = get(tokenState)
 
     switch (token) {
       case 'dot':
       case 'bdt':
-        return '#E6007A';
+      case 'pat':
+        return '#E6007A'
       case 'dego':
       case 'ksm':
       case 'bnc':
       case 'true':
       case 'map':
-        return '#000000';
+        return '#000000'
       case 'pha':
-        return '#D2FD60';
+        return '#D2FD60'
       case 'cru':
-        return '#fa8c16';
+        return '#fa8c16'
       case 'osn':
       case 'mxc':
-        return '#04D2C5';
+        return '#04D2C5'
       case 'pcx':
       case 'atp':
-        return '#ecb417';
+        return '#ecb417'
       case 'ring':
-        return '#B015ED';
+        return '#B015ED'
       case 'litentry':
-        return '#1BC675';
+        return '#1BC675'
       default:
-        return '#E6007A';
+        return '#E6007A'
     }
-  }
-});
+  },
+})
 
 export const secondaryThemeColorState = selector({
   key: 'secondaryThemeColorState',
   get: ({ get }) => {
-    const token = get(tokenState);
+    const token = get(tokenState)
 
     switch (token) {
       case 'dot':
       case 'bdt':
-        return '#FCE0EF';
+      case 'pat':
+        return '#FCE0EF'
       case 'dego':
       case 'ksm':
       case 'bnc':
       case 'true':
       case 'map':
-        return '#E0E0E0';
+        return '#E0E0E0'
       case 'pha':
-        return '#F8FEE5';
+        return '#F8FEE5'
       case 'cru':
-        return '#FDDDBB';
+        return '#FDDDBB'
       case 'osn':
       case 'mxc':
-        return '#D7F8F6';
+        return '#D7F8F6'
       case 'pcx':
       case 'atp':
-        return '#FFF2CC';
+        return '#FFF2CC'
       case 'ring':
-        return '#F8E8FF';
+        return '#F8E8FF'
       case 'litentry':
-        return '#CFFFE8';
+        return '#CFFFE8'
       default:
-        return '#FCE0EF';
+        return '#FCE0EF'
     }
-  }
-});
+  },
+})
 
 export const coversState = selector({
   key: 'coversState',
   get: ({ get }) => {
-    const token = get(tokenState);
-    const isVertical = get(isVerticalState);
+    const token = get(tokenState)
+    const isVertical = get(isVerticalState)
 
     switch (token) {
       case 'dot':
-        return isVertical ? dotHorizontalCovers : dotVerticalCovers;
+        return isVertical ? dotHorizontalCovers : dotVerticalCovers
       case 'ksm':
-        return isVertical ? ksmHorizontalCovers : ksmVerticalCovers;
+        return isVertical ? ksmHorizontalCovers : ksmVerticalCovers
       case 'pha':
-        return isVertical ? phaHorizontalCovers : phaVerticalCovers;
+        return isVertical ? phaHorizontalCovers : phaVerticalCovers
       case 'cru':
-        return isVertical ? cruHorizontalCovers : cruVerticalCovers;
+        return isVertical ? cruHorizontalCovers : cruVerticalCovers
       case 'osn':
-        return isVertical ? osnHorizontalCovers : osnVerticalCovers;
+        return isVertical ? osnHorizontalCovers : osnVerticalCovers
       case 'pcx':
-        return isVertical ? pcxHorizontalCovers : pcxVerticalCovers;
+        return isVertical ? pcxHorizontalCovers : pcxVerticalCovers
       case 'ring':
-        return isVertical ? ringHorizontalCovers : ringVerticalCovers;
+        return isVertical ? ringHorizontalCovers : ringVerticalCovers
       case 'base':
-        return isVertical ? baseHorizontalCovers : dotVerticalCovers;
+        return isVertical ? baseHorizontalCovers : dotVerticalCovers
       case 'dego':
-        return isVertical ? degoHorizontalCovers : degoVerticalCovers;
+        return isVertical ? degoHorizontalCovers : degoVerticalCovers
       case 'atp':
-        return isVertical ? atpHorizontalCovers : atpVerticalCovers;
+        return isVertical ? atpHorizontalCovers : atpVerticalCovers
       case 'bnc':
-        return isVertical ? bncHorizontalCovers : bncVerticalCovers;
+        return isVertical ? bncHorizontalCovers : bncVerticalCovers
       case 'mxc':
-        return isVertical ? mxcHorizontalCovers : mxcVerticalCovers;
+        return isVertical ? mxcHorizontalCovers : mxcVerticalCovers
       case 'litentry':
-        return isVertical ? litentryHorizontalCovers : litentryVerticalCovers;
+        return isVertical ? litentryHorizontalCovers : litentryVerticalCovers
       case 'bdt':
-        return isVertical ? bdtHorizontalCovers : bdtVerticalCovers;
+        return isVertical ? bdtHorizontalCovers : bdtVerticalCovers
       case 'true':
-        return isVertical ? trueHorizontalCovers : trueVerticalCovers;
+        return isVertical ? trueHorizontalCovers : trueVerticalCovers
       case 'map':
-        return isVertical ? mapHorizontalCovers : mapVerticalCovers;
+        return isVertical ? mapHorizontalCovers : mapVerticalCovers
+      case 'pat':
+        return isVertical ? patHorizontalCovers : patVerticalCovers
       default:
-        return isVertical ? osnHorizontalCovers : osnVerticalCovers;
+        return isVertical ? osnHorizontalCovers : osnVerticalCovers
     }
-  }
-});
+  },
+})
 
 export const contentImageState = selector({
   key: 'contentImageState',
   get: ({ get }) => {
-    const content = get(contentState);
-    const editImages = [...content.matchAll(/(!\[[^\]]*\]\((.*?)\s*("(?:.*[^"])")?\s*\))\(\s*(\d+)(?:px)?\s*\*\s*(\d+)(?:px)?\s*\)/g)];
-    const images = editImages.map(item => ({src: item[2], width: item[4], height: item[5]}));
-    const newContent = content.replace(/(!\[[^\]]*\]\((.*?)\s*("(?:.*[^"])")?\s*\))\(\s*\d+(?:px)?\s*\*\s*\d+(?:px)?\s*\)/g, '$1');
+    const content = get(contentState)
+    const editImages = [
+      ...content.matchAll(
+        /(!\[[^\]]*\]\((.*?)\s*("(?:.*[^"])")?\s*\))\(\s*(\d+)(?:px)?\s*\*\s*(\d+)(?:px)?\s*\)/g
+      ),
+    ]
+    const images = editImages.map((item) => ({
+      src: item[2],
+      width: item[4],
+      height: item[5],
+    }))
+    const newContent = content.replace(
+      /(!\[[^\]]*\]\((.*?)\s*("(?:.*[^"])")?\s*\))\(\s*\d+(?:px)?\s*\*\s*\d+(?:px)?\s*\)/g,
+      '$1'
+    )
     return { content: newContent, images }
-  }
-});
+  },
+})
