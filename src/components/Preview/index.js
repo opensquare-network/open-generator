@@ -46,7 +46,7 @@ export default function Preview() {
 
     const canvas = await html2canvas(element, {
       useCORS: true,
-      scale: 10,
+      scale: 2,
       allowTaint: true
     });
     const img = canvas.toDataURL("image/png");
