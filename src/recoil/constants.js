@@ -168,3 +168,12 @@ export const sssnodesVerticalCovers = [
   '/imgs/sssnodes/vertical/sssnodes-1.jpg',
   '/imgs/sssnodes/vertical/sssnodes-2.jpg'
 ]
+export const communityHorizontalCovers = [
+  '/imgs/community/horizontal/community-1.jpg',
+  '/imgs/community/horizontal/community-2.jpg'
+]
+
+export const communityVerticalCovers = [
+  '/imgs/community/vertical/community-1.jpg',
+  '/imgs/community/vertical/community-2.jpg'
+]

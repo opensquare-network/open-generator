@@ -36,6 +36,8 @@ import {
   patVerticalCovers,
   sssnodesVerticalCovers,
   sssnodesHorizontalCovers,
+  communityVerticalCovers,
+  communityHorizontalCovers,
 } from './constants'
 
 export const themeColorState = selector({
@@ -153,6 +155,8 @@ export const coversState = selector({
         return isVertical ? patHorizontalCovers : patVerticalCovers
       case 'sssnodes':
         return isVertical ? sssnodesHorizontalCovers : sssnodesVerticalCovers
+      case 'community':
+        return isVertical ? communityHorizontalCovers : communityVerticalCovers
       default:
         return isVertical ? osnHorizontalCovers : osnVerticalCovers
     }

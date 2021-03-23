@@ -107,6 +107,12 @@ const options = [
     value: 'sssnodes',
     image: { src: '/imgs/sssnodes-logo.png', avatar: true },
   },
+  {
+    key: 'community',
+    text: 'Community',
+    value: 'community',
+    image: { src: '/imgs/community-logo.png', avatar: true },
+  },
 ]
 
 export default options
