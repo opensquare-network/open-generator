@@ -101,6 +101,12 @@ const options = [
     value: 'osn',
     image: { src: '/imgs/opensquare-logo.webp', avatar: true },
   },
+  {
+    key: 'sssnodes',
+    text: 'Sssnodes',
+    value: 'sssnodes',
+    image: { src: '/imgs/sssnodes-logo.png', avatar: true },
+  },
 ]
 
 export default options
