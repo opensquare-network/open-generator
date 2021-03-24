@@ -33,6 +33,10 @@ import {
   mapVerticalCovers,
   patHorizontalCovers,
   patVerticalCovers,
+  sssnodesHorizontalCovers,
+  sssnodesVerticalCovers,
+  communityHorizontalCovers,
+  communityVerticalCovers
 } from '../constants'
 
 export const defaultToken = window.localStorage.getItem('token') || 'dot'
@@ -77,6 +81,10 @@ export function getDefaultBannerUrls(token, vertical) {
       return vertical ? mapHorizontalCovers : mapVerticalCovers
     case 'patract':
       return vertical ? patHorizontalCovers : patVerticalCovers
+    case 'sssnodes':
+      return vertical ? sssnodesHorizontalCovers : sssnodesVerticalCovers
+    case 'community':
+      return vertical ? communityHorizontalCovers : communityVerticalCovers
     default:
       return vertical ? osnHorizontalCovers : osnVerticalCovers
   }
